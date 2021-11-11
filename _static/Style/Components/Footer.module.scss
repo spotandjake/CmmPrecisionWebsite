@@ -1,0 +1,12 @@
+// Footer Container
+// TODO: improve this
+.container {
+  display: flex;
+  width: 100%;
+  padding: 1rem var(--size-gutter-1);
+  // TODO: make color var for this color
+  background-color: #111;
+  span {
+    margin: auto;
+  }
+}
