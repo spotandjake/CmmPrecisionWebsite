@@ -4,7 +4,6 @@ interface Props {
   children: JSX.Element[] | JSX.Element;
 }
 const Hero = ({ children }: Props) => {
-  // TODO: Improve the footer
   return (
     <section className={styles.hero}>
       <div>
