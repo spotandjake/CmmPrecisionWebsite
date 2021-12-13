@@ -13,7 +13,7 @@ const Hero = ({ children }: Props) => {
         </div>
       </div>
       <picture className={styles.Overlay}>
-        <img src="./Images/Hero.jpg" />
+        <img src="./Images/Hero.jpg" alt="Hero Image" />
       </picture>
     </section>
   );

@@ -24,7 +24,7 @@ const Home = () => {
           <div className={styles.gridCol2}>
             <div>
               <picture>
-                <img src="./Images/About.jpg" />
+                <img src="./Images/About.jpg" alt="Cmm Image" />
               </picture>
             </div>
             <div>
@@ -49,7 +49,7 @@ const Home = () => {
             </div>
             <div>
               <picture>
-                <img src="./Images/Experience.jpg" />
+                <img src="./Images/Experience.jpg" alt="Cmm Image" />
               </picture>
             </div>
           </div>
@@ -62,27 +62,27 @@ const Home = () => {
               <span className={styles.CardOverlay}>Fixture Certification</span>
               {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" />
+                <img src="./Images/Hero.jpg" alt="Fixture Being Certified" />
               </picture>
             </div>
             <div className={styles.Card}>
               <span className={styles.CardOverlay}>Part Inspection</span>
               <picture>
-                <img src="./Images/About.jpg" />
+                <img src="./Images/About.jpg" alt="Part Inspection" />
               </picture>
             </div>
             <div className={styles.Card}>
               <span className={styles.CardOverlay}>Consultation</span>
               {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" />
+                <img src="./Images/Hero.jpg" alt="Consultation" />
               </picture>
             </div>
             <div className={styles.Card}>
               <span className={styles.CardOverlay}>On Site Inspection</span>
               {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" />
+                <img src="./Images/Hero.jpg" alt="On Site Inspection" />
               </picture>
             </div>
             <div className={styles.Card}>
@@ -90,7 +90,7 @@ const Home = () => {
               <span className={styles.CardOverlay}>TODO: Add Service name</span>
               {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" />
+                <img src="./Images/Hero.jpg" alt="TODO: Add Alternate" />
               </picture>
             </div>
             <div className={styles.Card}>
@@ -98,7 +98,7 @@ const Home = () => {
               <span className={styles.CardOverlay}>TODO: Add Service name</span>
               {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" />
+                <img src="./Images/Hero.jpg" alt="TODO: Add Alternate" />
               </picture>
             </div>
           </div>
@@ -110,14 +110,14 @@ const Home = () => {
             <div className={[ styles.Card, styles.EquipmentCard ].join(' ')}>
               <span className={styles.CardOverlay}>Cmm Brown &amp; Sharpe</span>
               <picture>
-                <img src="./Images/cmm.JPG" />
+                <img src="./Images/cmm.jpg" alt="Cmm" />
               </picture>
             </div>
             <div className={[ styles.Card, styles.EquipmentCard ].join(' ')}>
               <span className={styles.CardOverlay}>Romor Arm</span>
               {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/romor arm.jpg" />
+                <img src="./Images/romor arm.jpg" alt="Romor Arm" />
               </picture>
             </div>
           </div>

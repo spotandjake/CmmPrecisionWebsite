@@ -8,7 +8,7 @@ const MetaData = ({ PageTitle }: Props) => {
     <Head>
       <title>Cmm Precision || {PageTitle}</title>
       {/* TODO: Add Description */}
-      <meta name="description" content="" />
+      <meta name="description" content="Cmm Precision Website" />
       {/* TODO: Get A Better Icon */}
       <link rel="icon" href="/favicon.ico" />
     </Head>
