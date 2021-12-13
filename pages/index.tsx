@@ -86,16 +86,14 @@ const Home = () => {
               </picture>
             </div>
             <div className={styles.Card}>
-              {/* TODO: Replace Item */}
-              <span className={styles.CardOverlay}>TODO: Add Service name</span>
+              <span className={styles.CardOverlay}>Reverse Engineering</span>
               {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" alt="TODO: Add Alternate" />
+                <img src="./Images/Hero.jpg" alt="Reverse Engineering" />
               </picture>
             </div>
             <div className={styles.Card}>
-              {/* TODO: Replace Item */}
-              <span className={styles.CardOverlay}>TODO: Add Service name</span>
+              <span className={styles.CardOverlay}>Part Rework &amp; Sorting</span>
               {/* TODO: Replace The Photo */}
               <picture>
                 <img src="./Images/Hero.jpg" alt="TODO: Add Alternate" />
