@@ -10,7 +10,7 @@ const Home = () => {
     <section>
       <Head>
         <title>Cmm Precision || Home</title>
-        {/* TODO: */}
+        {/* TODO: Add Description */}
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -32,9 +32,8 @@ const Home = () => {
           <h3>About</h3>
           <div className={styles.gridCol2}>
             <div>
-              {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" />
+                <img src="./Images/About.jpg" />
               </picture>
             </div>
             <div>
@@ -58,9 +57,8 @@ const Home = () => {
               </p>
             </div>
             <div>
-              {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" />
+                <img src="./Images/Experience.jpg" />
               </picture>
             </div>
           </div>
@@ -78,9 +76,8 @@ const Home = () => {
             </div>
             <div className={styles.Card}>
               <span className={styles.CardOverlay}>Part Inspection</span>
-              {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" />
+                <img src="./Images/About.jpg" />
               </picture>
             </div>
             <div className={styles.Card}>
@@ -98,6 +95,7 @@ const Home = () => {
               </picture>
             </div>
             <div className={styles.Card}>
+              {/* TODO: Replace Item */}
               <span className={styles.CardOverlay}>TODO: Add Service name</span>
               {/* TODO: Replace The Photo */}
               <picture>
@@ -105,6 +103,7 @@ const Home = () => {
               </picture>
             </div>
             <div className={styles.Card}>
+              {/* TODO: Replace Item */}
               <span className={styles.CardOverlay}>TODO: Add Service name</span>
               {/* TODO: Replace The Photo */}
               <picture>
@@ -117,18 +116,17 @@ const Home = () => {
         <div className={styles.Article}>
           <h3>Equipment</h3>
           <div className={styles.GridCards2}>
-            <div className={styles.Card}>
+            <div className={[ styles.Card, styles.EquipmentCard ].join(' ')}>
               <span className={styles.CardOverlay}>Cmm Brown &amp; Sharpe</span>
-              {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" />
+                <img src="./Images/cmm.JPG" />
               </picture>
             </div>
-            <div className={styles.Card}>
+            <div className={[ styles.Card, styles.EquipmentCard ].join(' ')}>
               <span className={styles.CardOverlay}>Romor Arm</span>
               {/* TODO: Replace The Photo */}
               <picture>
-                <img src="./Images/Hero.jpg" />
+                <img src="./Images/romor arm.jpg" />
               </picture>
             </div>
           </div>

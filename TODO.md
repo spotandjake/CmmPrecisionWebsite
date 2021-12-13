@@ -1,15 +1,27 @@
 # TODO
-+ [ ] Index Page
-  + [ ] Description
-  + [x] Hero Image
-  + [ ] Main Content
-+ [ ] About Pages
-  + [ ] Create
++ [ ] Pages
+  + [ ] Index Page
+    + [ ] Description
+    + [x] Hero Image
+    + [ ] Main Content
+  + [ ] About Pages
+    + [ ] Design
+    + [ ] Create
+  + [ ] Coming Soon Page
+    + [ ] Design
+    + [ ] Create
+  + [x] 404 Page
+    + [x] Design
+    + [x] Create
 + [ ] Components
   + [ ] Header
     + [ ] Move color to the theme
     + [ ] Add Nav Dropdowns
   + [ ] Footer
+    + [ ] Make Correct CopyRight At The Bottom
+    + [ ] Add Contact Form Area
+    + [ ] Add Social Area
+    + [ ] Add Basic Index Area
 + [ ] Get new images
 + [ ] Fix Up Color Scheme
 + [ ] Test page
@@ -22,3 +34,4 @@
 + [ ] Make Lighthouse Return 100% on all Pages
 + [ ] AutoDeploys from github
 + [ ] Setup hosting
++ [ ] Consider switching to tailwind maybe unlikely though
