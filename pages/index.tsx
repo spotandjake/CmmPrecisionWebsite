@@ -1,30 +1,21 @@
-import Head from 'next/head';
 // Styles
 import styles from '../_static/Style/Pages/Index.module.scss';
 // Components
+import MetaData from '../_static/Components/MetaData';
+import Hero from '../_static/Components/Hero';
 import Header from '../_static/Components/Header';
 import Footer from '../_static/Components/Footer';
 
 const Home = () => {
   return (
     <section>
-      <Head>
-        <title>Cmm Precision || Home</title>
-        {/* TODO: Add Description */}
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaData PageTitle='Home' />
       {/* Header */}
-      <Header />
+      <Header Active='Home' />
       {/* Hero */}
-      <section className={styles.hero}>
-        <div>
-          <h2>Cmm Precision</h2>
-        </div>
-        <picture className={styles.Overlay}>
-          <img src="./Images/Hero.jpg" />
-        </picture>
-      </section>
+      <Hero>
+        <h2>Cmm Precision</h2>
+      </Hero>
       {/* Content */}
       <main>
         {/* About */}

@@ -7,9 +7,9 @@
   + [ ] About Pages
     + [ ] Design
     + [ ] Create
-  + [ ] Coming Soon Page
-    + [ ] Design
-    + [ ] Create
+  + [x] Coming Soon Page
+    + [x] Design
+    + [x] Create
   + [x] 404 Page
     + [x] Design
     + [x] Create

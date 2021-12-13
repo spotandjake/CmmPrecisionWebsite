@@ -1,24 +1,27 @@
 import styles from '../Style/Components/Header.module.scss';
 import Link from 'next/link';
 
-const Header = () => {
+interface Props {
+  Active: string;
+}
+const Header = ({ Active }: Props) => {
   return (
     <header className={styles.container}>
       <h1>Cmm Precision</h1>
       <nav className={styles.navContainer}>
         <ul>
-          <li className={styles.Active}>
+          <li className={Active == 'Home' ? styles.Active : ''}>
             <Link href="/">Home</Link>
           </li>
-          <li>
-            <Link href="">About</Link>
+          <li className={Active == 'About' ? styles.Active : ''}>
+            <Link href="/ComingSoon">About</Link>
           </li>
-          <li>
-            <Link href="">Certifications</Link>
+          <li className={Active == 'Certificate' ? styles.Active : ''}>
+            <Link href="/ComingSoon">Certifications</Link>
           </li>
         </ul>
       </nav>
-      <button>Contact Us</button>
+      <Link href="/ComingSoon" passHref={true}><button>Contact Us</button></Link>
     </header>
   );
 };
