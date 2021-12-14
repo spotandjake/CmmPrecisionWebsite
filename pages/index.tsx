@@ -1,8 +1,10 @@
 // Styles
 import styles from '../_static/Style/Pages/Index.module.scss';
 // Components
+import Link from 'next/link';
 import MetaData from '../_static/Components/MetaData';
 import Hero from '../_static/Components/Hero';
+import ImageCard from '../_static/Components/ImageCard';
 import Header from '../_static/Components/Header';
 import Footer from '../_static/Components/Footer';
 
@@ -31,7 +33,7 @@ const Home = () => {
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus quam leo, et tincidunt risus porttitor ut. Aenean enim magna, volutpat in odio nec, pretium sagittis lacus. Integer non elit a dolor maximus vehicula quis id dolor. Ut malesuada elit quis ante volutpat, nec finibus justo interdum. Nulla porta leo non enim congue sagittis. Mauris aliquam porttitor dui nec fermentum. Donec scelerisque ex vel ipsum vulputate, at egestas dolor lobortis. Nullam tristique egestas rhoncus.
               </p>
-              <button>Read More</button>
+              <Link href="/ComingSoon" passHref={true}><button>Read More</button></Link>
             </div>
           </div>
         </div>
@@ -58,66 +60,25 @@ const Home = () => {
         <div className={styles.Article}>
           <h3>Services</h3>
           <div className={styles.GridCards3}>
-            <div className={styles.Card}>
-              <span className={styles.CardOverlay}>Fixture Certification</span>
-              {/* TODO: Replace The Photo */}
-              <picture>
-                <img src="./Images/Hero.jpg" alt="Fixture Being Certified" />
-              </picture>
-            </div>
-            <div className={styles.Card}>
-              <span className={styles.CardOverlay}>Part Inspection</span>
-              <picture>
-                <img src="./Images/About.jpg" alt="Part Inspection" />
-              </picture>
-            </div>
-            <div className={styles.Card}>
-              <span className={styles.CardOverlay}>Consultation</span>
-              {/* TODO: Replace The Photo */}
-              <picture>
-                <img src="./Images/Hero.jpg" alt="Consultation" />
-              </picture>
-            </div>
-            <div className={styles.Card}>
-              <span className={styles.CardOverlay}>On Site Inspection</span>
-              {/* TODO: Replace The Photo */}
-              <picture>
-                <img src="./Images/Hero.jpg" alt="On Site Inspection" />
-              </picture>
-            </div>
-            <div className={styles.Card}>
-              <span className={styles.CardOverlay}>Reverse Engineering</span>
-              {/* TODO: Replace The Photo */}
-              <picture>
-                <img src="./Images/Hero.jpg" alt="Reverse Engineering" />
-              </picture>
-            </div>
-            <div className={styles.Card}>
-              <span className={styles.CardOverlay}>Part Rework &amp; Sorting</span>
-              {/* TODO: Replace The Photo */}
-              <picture>
-                <img src="./Images/Hero.jpg" alt="TODO: Add Alternate" />
-              </picture>
-            </div>
+            {/* TODO: Replace Image */}
+            <ImageCard ImagePath={'./Images/Hero.jpg'} OverlayText={'Fixture Certification'}/>
+            <ImageCard ImagePath={'./Images/About.jpg'} OverlayText={'Part Inspection'}/>
+            {/* TODO: Replace Image */}
+            <ImageCard ImagePath={'./Images/Hero.jpg'} OverlayText={'Consultation'}/>
+            {/* TODO: Replace Image */}
+            <ImageCard ImagePath={'./Images/Hero.jpg'} OverlayText={'On Site Inspection'}/>
+            {/* TODO: Replace Image */}
+            <ImageCard ImagePath={'./Images/Hero.jpg'} OverlayText={'Reverse Engineering'}/>
+            {/* TODO: Replace Image */}
+            <ImageCard ImagePath={'./Images/Hero.jpg'} OverlayText={'Part Rework & Sorting'}/>
           </div>
         </div>
         {/* Equipment */}
         <div className={styles.Article}>
           <h3>Equipment</h3>
           <div className={styles.GridCards2}>
-            <div className={[ styles.Card, styles.EquipmentCard ].join(' ')}>
-              <span className={styles.CardOverlay}>Cmm Brown &amp; Sharpe</span>
-              <picture>
-                <img src="./Images/cmm.jpg" alt="Cmm" />
-              </picture>
-            </div>
-            <div className={[ styles.Card, styles.EquipmentCard ].join(' ')}>
-              <span className={styles.CardOverlay}>Romor Arm</span>
-              {/* TODO: Replace The Photo */}
-              <picture>
-                <img src="./Images/romor arm.jpg" alt="Romor Arm" />
-              </picture>
-            </div>
+            <ImageCard ImagePath={'./Images/cmm.jpg'} OverlayText={'Cmm Brown & Sharpe'}/>
+            <ImageCard ImagePath={'./Images/romor arm.jpg'} OverlayText={'Romor Arm'}/>
           </div>
         </div>
       </main>

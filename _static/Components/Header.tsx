@@ -4,6 +4,7 @@ import Link from 'next/link';
 import IconButton from '@mui/material/IconButton';
 import SvgIcon from '@mui/material/SvgIcon';
 import MenuIcon from '@mui/icons-material/Menu';
+import { HeaderLinks } from '../Navigation';
 interface Props {
   Active: string;
 }
@@ -26,15 +27,13 @@ const Header = ({ Active }: Props) => {
           />
         </IconButton>
         <ul className={[ styles.navLinks, menuOpen ? styles.menuOpen : '' ].join(' ')}>
-          <li className={Active == 'Home' ? styles.Active : ''} onClick={() => setMenuOpen(false)}>
-            <Link href="/">Home</Link>
-          </li>
-          <li className={Active == 'About' ? styles.Active : ''} onClick={() => setMenuOpen(false)}>
-            <Link href="/ComingSoon">About</Link>
-          </li>
-          <li className={Active == 'Certificate' ? styles.Active : ''} onClick={() => setMenuOpen(false)}>
-            <Link href="/ComingSoon">Certifications</Link>
-          </li>
+          {HeaderLinks.map(({ Name, Address }) => {
+            return (
+              <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={Name}>
+                <Link href={Address}>{Name}</Link>
+              </li>
+            );
+          })}
           <li onClick={() => setMenuOpen(false)}>
             <Link href="/ComingSoon" passHref={true}><button>Contact Us</button></Link>
           </li>

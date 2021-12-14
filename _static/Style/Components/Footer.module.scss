@@ -1,13 +1,56 @@
 // Footer Container
 // TODO: improve this
 .container {
-  display: flex;
   width: 100%;
   padding: 1rem var(--size-gutter-1);
   // TODO: make color var for this color
   background-color: #111;
-  span {
-    margin: auto;
+  .footer {
+    // Temporary Height
+    height: 15rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    ul {
+      // Media Stuff
+      &.mediaList {
+        padding-inline-start: 1.5rem;
+        li {
+          display: flex;
+          svg {
+            margin-right: 1rem;
+          }
+          a {
+            margin: auto 0;
+          }
+        }
+      }
+      // Nav List Stuff
+      li {
+        list-style: none;
+        padding: .5rem 0;
+        position: relative;
+        &:hover {
+          margin-left: .25rem;
+        }
+        .arrow {
+          position: absolute;
+          border-right: 2px solid var(--color-Text-2);
+          border-bottom: 2px solid var(--color-Text-2);
+          width: .5rem;
+          height: .5rem;
+          top: 50%;
+          left: -2rem;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    span {
+      margin: auto;
+    }
   }
 }
 

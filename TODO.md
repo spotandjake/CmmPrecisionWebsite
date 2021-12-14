@@ -21,11 +21,12 @@
     + [ ] Header
       + [x] Move color to the theme
       + [ ] Add Nav Dropdowns
-    + [ ] Footer
-      + [ ] Add Large Footer
-        + [ ] Add Contact Form Area
-        + [ ] Add Social Area
-        + [ ] Add Basic Index Area
+      + [ ] Add Support For DropDown Type In The Config
+    + [x] Footer
+      + [x] Add Large Footer
+        + [x] Add Contact Form Area
+        + [x] Add Social Area
+        + [x] Add Basic Index Area
   + [ ] Get new images
   + [ ] Test page
   + [ ] Tweak Design

@@ -13,6 +13,9 @@
 .navContainer {
   display: flex;
   margin-left: auto;
+  .menuButton {
+    display: none;
+  }
   .navLinks {
     display: flex;
     margin: auto 2rem;
@@ -46,6 +49,9 @@
 }
 
 @media (max-width: 1000px) {
+  .menuButton {
+    display: block !important;
+  }
   .navLinks {
     display: none !important;
     z-index: 99;
