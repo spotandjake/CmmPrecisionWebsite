@@ -30,3 +30,18 @@
   top: 0;
   position: absolute;
 }
+// Responsive Styles
+@media (max-width: 1300px) {
+  .hero {
+    height: auto;
+    aspect-ratio: 12 / 7;
+    h2 {
+      font-size: 4rem !important;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .hero h2 {
+    font-size: 2rem !important;
+  }
+}

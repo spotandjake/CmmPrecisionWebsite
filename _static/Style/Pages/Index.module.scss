@@ -53,3 +53,23 @@
 .EquipmentCard {
   aspect-ratio: 8 / 7;
 }
+// Responsive Styles
+@media (max-width: 1300px) {
+  .gridCol2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    div {
+      display: flex;
+      flex-direction: column;
+      picture {
+        margin: auto;
+      }
+    }
+  }
+  .GridCards2, .GridCards3 {
+    grid-template-columns: 1fr;
+  }
+  .gridText {
+    order: -1;
+  }
+}

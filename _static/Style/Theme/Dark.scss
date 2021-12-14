@@ -16,3 +16,15 @@
   // ===========================================================================
   --size-gutter-1: 10rem;
 }
+
+// Responsive
+@media (max-width: 1300px) {
+  :root {
+    --size-gutter-1: 5rem;
+  }
+}
+@media (max-width: 900px) {
+  :root {
+    --size-gutter-1: 1rem;
+  }
+}

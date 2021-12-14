@@ -5,18 +5,21 @@
       + [ ] Description
       + [x] Hero Image
       + [ ] Main Content
+      + [x] Mobile Support
     + [ ] About Pages
       + [ ] Design
       + [ ] Create
     + [x] Coming Soon Page
       + [x] Design
       + [x] Create
+      + [ ] Mobile Support
     + [x] 404 Page
       + [x] Design
       + [x] Create
+      + [ ] Mobile Support
   + [ ] Components
     + [ ] Header
-      + [ ] Move color to the theme
+      + [x] Move color to the theme
       + [ ] Add Nav Dropdowns
     + [ ] Footer
       + [ ] Add Large Footer
