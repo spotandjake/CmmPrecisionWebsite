@@ -1,11 +1,45 @@
 import styles from '../_static/Style/Pages/Contact.module.scss';
 // Components
+import React, { useState, useEffect } from 'react';
+import { NextPageContext } from 'next';
 import MetaData from '../_static/Components/MetaData';
 import Header from '../_static/Components/Header';
 import Footer from '../_static/Components/Footer';
 import Hero from '../_static/Components/Hero';
 
-const Contact = () => {
+const Contact = ({ query }: NextPageContext) => {
+  const [ popup, setPopup ] = useState(<></>);
+  useEffect(() => {
+    const closeModal = () => {
+      // Remove Popup
+      setPopup(<></>);
+      // Reset Query Params
+      window.history.replaceState(null, '', '/Contact');
+    };
+    if (query && query.failed) {
+      if (query.failed == '1') {
+        // Failure
+        setPopup(
+          <div className={styles.ModalContainer} onClick={() => closeModal()}>
+            <div className={styles.Modal}>
+              <p>An unknown Error has Occurred And Your Message Could Not Be Sent Please Try Again.</p>
+              <div className={styles.statusBar}></div>
+            </div>
+          </div>
+        );
+      } else {
+        // Success
+        setPopup(
+          <div className={styles.ModalContainer} onClick={() => closeModal()}>
+            <div className={styles.Modal}>
+              <p>Your Message Was Successfully Sent.</p>
+              <div className={[ styles.statusBar, styles.Success ].join(' ')}></div>
+            </div>
+          </div>
+        );
+      }
+    }
+  }, []);
   return (
     <section className={styles.container}>
       <MetaData PageTitle='Contact Us' />
@@ -15,6 +49,8 @@ const Contact = () => {
       <Hero>
         <h2>Contact Us</h2>
       </Hero>
+      {/* PopUp Section */}
+      {popup}
       {/* Contact Us Section */}
       <section className={styles.ContactSection}>
         <div>
@@ -55,6 +91,8 @@ const Contact = () => {
     </section>
   );
 };
+
+Contact.getInitialProps = ({ query }: NextPageContext) => ({ query });
 
 
 export default Contact;

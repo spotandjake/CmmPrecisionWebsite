@@ -53,6 +53,40 @@
     }
   }
 }
+// Popup Modal
+.ModalContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  .Modal {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 40rem;
+    margin: auto;
+    color: var(--color-Text-3);
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    p {
+      padding: 1rem;
+      flex-grow: 1;
+    }
+    .statusBar {
+      height: 2rem;
+      width: 100%;
+      background-color: #f00;
+      &.Success {
+        background-color: #0f0 !important;
+      }
+    }
+  }
+}
 
 // Responsive Style
 @media (max-width: 1200px) {

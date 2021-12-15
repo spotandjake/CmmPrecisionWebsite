@@ -31,7 +31,7 @@
     + [ ] Contact Page
       + [x] Design
       + [ ] PHP Form
-      + [ ] Failed Or Succeeded In Sending UI
+      + [x] Failed Or Succeeded In Sending UI
       + [x] Mobile Support
       + [ ] Add Map
   + [x] Components
@@ -44,9 +44,13 @@
         + [x] Add Contact Form Area
         + [x] Add Social Area
         + [x] Add Basic Index Area
-  + [ ] Get new images
   + [x] WebP Image For Browsers That Support Them
   + [x] Lazy Load images
+
+
+
+
+  + [ ] Get new images
   + [ ] Make Lighthouse Return 100% on all Pages
     + [ ] Determine Good way to serve the correct image size statically with react
     + [ ] Determine width and height for images
