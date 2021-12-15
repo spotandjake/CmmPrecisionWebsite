@@ -82,7 +82,7 @@ const Home = () => {
           <h3>Equipment</h3>
           <div className={styles.GridCards2}>
             <ImageCard ImagePath={'/Images/cmm.jpg'} OverlayText={'Cmm Brown & Sharpe'} />
-            <ImageCard ImagePath={'/Images/romor arm.jpg'} OverlayText={'Romor Arm'} />
+            <ImageCard ImagePath={'/Images/romorArm.jpg'} OverlayText={'Romor Arm'} />
           </div>
         </div>
       </main>
