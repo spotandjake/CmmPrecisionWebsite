@@ -12,9 +12,9 @@ const Hero = ({ children }: Props) => {
         </div>
       </div>
       <picture className={styles.Overlay}>
-        <source srcSet={require('../Images/Hero.jpg?webp')} type="image/webp" />
-        <source srcSet={require('../Images/Hero.jpg')} type="image/jpeg" />
-        <img src={require('../Images/Hero.jpg')} alt="Hero Image" />
+        <source srcSet={require('../../public/Images/Hero.jpg?webp')} type="image/webp" />
+        <source srcSet={require('../../public/Images/Hero.jpg')} type="image/jpeg" />
+        <img src={require('../../public/Images/Hero.jpg')} alt="Hero Image" />
       </picture>
     </section>
   );

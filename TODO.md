@@ -41,8 +41,8 @@
   + [ ] Test page
   + [ ] Tweak Design
   + [ ] Adjust Color Theme Depending on user preference
-  + [ ] WebP Image For Browsers That Support Them
-  + [ ] Lazy Load images
+  + [x] WebP Image For Browsers That Support Them
+  + [x] Lazy Load images
   + [ ] Make Lighthouse Return 100% on all Pages
   + [ ] AutoDeploys from github
   + [ ] Setup hosting
