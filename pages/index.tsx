@@ -26,7 +26,9 @@ const Home = () => {
           <div className={styles.gridCol2}>
             <div>
               <picture>
-                <img src="./Images/About.jpg" alt="Cmm Image" />
+                <source srcSet={require('../_static/Images/About.jpg?webp')} type="image/webp" />
+                <source srcSet={require('../_static/Images/About.jpg')} type="image/jpeg" />
+                <img src={require('../_static/Images/About.jpg')} alt='Cmm Image' />
               </picture>
             </div>
             <div className={styles.gridText}>
@@ -51,7 +53,9 @@ const Home = () => {
             </div>
             <div>
               <picture>
-                <img src="./Images/Experience.jpg" alt="Cmm Image" />
+                <source srcSet={require('../_static/Images/Experience.jpg?webp')} type="image/webp" />
+                <source srcSet={require('../_static/Images/Experience.jpg')} type="image/jpeg" />
+                <img src={require('../_static/Images/Experience.jpg')} alt='Cmm Image' />
               </picture>
             </div>
           </div>
@@ -61,24 +65,72 @@ const Home = () => {
           <h3>Services</h3>
           <div className={styles.GridCards3}>
             {/* TODO: Replace Image */}
-            <ImageCard ImagePath={'./Images/Hero.jpg'} OverlayText={'Fixture Certification'}/>
-            <ImageCard ImagePath={'./Images/About.jpg'} OverlayText={'Part Inspection'}/>
+            <ImageCard OverlayText={'Fixture Certification'} >
+              <picture>
+                <source srcSet={require('../_static/Images/Hero.jpg?webp')} type="image/webp" />
+                <source srcSet={require('../_static/Images/Hero.jpg')} type="image/jpeg" />
+                <img src={require('../_static/Images/Hero.jpg')} alt='Fixture Certification' />
+              </picture>
+            </ImageCard>
+            <ImageCard OverlayText={'Part Inspection'} >
+              <picture>
+                <source srcSet={require('../_static/Images/About.jpg?webp')} type="image/webp" />
+                <source srcSet={require('../_static/Images/About.jpg')} type="image/jpeg" />
+                <img src={require('../_static/Images/About.jpg')} alt='Part Inspection' />
+              </picture>
+            </ImageCard>
             {/* TODO: Replace Image */}
-            <ImageCard ImagePath={'./Images/Hero.jpg'} OverlayText={'Consultation'}/>
+            <ImageCard OverlayText={'Consultation'} >
+              <picture>
+                <source srcSet={require('../_static/Images/Hero.jpg?webp')} type="image/webp" />
+                <source srcSet={require('../_static/Images/Hero.jpg')} type="image/jpeg" />
+                <img src={require('../_static/Images/Hero.jpg')} alt='Consultation' />
+              </picture>
+            </ImageCard>
             {/* TODO: Replace Image */}
-            <ImageCard ImagePath={'./Images/Hero.jpg'} OverlayText={'On Site Inspection'}/>
+            <ImageCard OverlayText={'On Site Inspection'} >
+              <picture>
+                <source srcSet={require('../_static/Images/Hero.jpg?webp')} type="image/webp" />
+                <source srcSet={require('../_static/Images/Hero.jpg')} type="image/jpeg" />
+                <img src={require('../_static/Images/Hero.jpg')} alt='On Site Inspection' />
+              </picture>
+            </ImageCard>
             {/* TODO: Replace Image */}
-            <ImageCard ImagePath={'./Images/Hero.jpg'} OverlayText={'Reverse Engineering'}/>
+            <ImageCard OverlayText={'Reverse Engineering'} >
+              <picture>
+                <source srcSet={require('../_static/Images/Hero.jpg?webp')} type="image/webp" />
+                <source srcSet={require('../_static/Images/Hero.jpg')} type="image/jpeg" />
+                <img src={require('../_static/Images/Hero.jpg')} alt='Reverse Engineering' />
+              </picture>
+            </ImageCard>
             {/* TODO: Replace Image */}
-            <ImageCard ImagePath={'./Images/Hero.jpg'} OverlayText={'Part Rework & Sorting'}/>
+            <ImageCard OverlayText={'Part Rework & Sorting'} >
+              <picture>
+                <source srcSet={require('../_static/Images/Hero.jpg?webp')} type="image/webp" />
+                <source srcSet={require('../_static/Images/Hero.jpg')} type="image/jpeg" />
+                <img src={require('../_static/Images/Hero.jpg')} alt='Part Rework & Sorting' />
+              </picture>
+            </ImageCard>
           </div>
         </div>
         {/* Equipment */}
         <div className={styles.Article}>
           <h3>Equipment</h3>
           <div className={styles.GridCards2}>
-            <ImageCard ImagePath={'./Images/cmm.jpg'} OverlayText={'Cmm Brown & Sharpe'}/>
-            <ImageCard ImagePath={'./Images/romor arm.jpg'} OverlayText={'Romor Arm'}/>
+            <ImageCard OverlayText={'Cmm Brown & Sharpe'}>
+              <picture>
+                <source srcSet={require('../_static/Images/cmm.jpg?webp')} type="image/webp" />
+                <source srcSet={require('../_static/Images/cmm.jpg')} type="image/jpeg" />
+                <img src={require('../_static/Images/cmm.jpg')} alt='Cmm Brown & Sharpe' />
+              </picture>
+            </ImageCard>
+            <ImageCard OverlayText={'Romor Arm'}>
+              <picture>
+                <source srcSet={require('../_static/Images/romor arm.jpg?webp')} type="image/webp" />
+                <source srcSet={require('../_static/Images/romor arm.jpg')} type="image/jpeg" />
+                <img src={require('../_static/Images/romor arm.jpg')} alt='Romor Arm' />
+              </picture>
+            </ImageCard>
           </div>
         </div>
       </main>

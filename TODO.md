@@ -1,5 +1,6 @@
 # TODOList
 + [ ] Generation 1
+  + [x] Logo
   + [ ] Pages
     + [ ] Index Page
       + [ ] Description

@@ -1,16 +1,21 @@
 import styles from '../Style/Components/ImageCard.module.scss';
 
 interface Props {
-  ImagePath: string;
+  ImagePath?: string;
   OverlayText: string;
+  children?: JSX.Element;
 }
-const ImageCard = ({ ImagePath, OverlayText }: Props) => {
+const ImageCard = ({ ImagePath, OverlayText, children }: Props) => {
   return (
     <div className={styles.Card}>
       <span className={styles.CardOverlay}>{OverlayText}</span>
-      <picture>
-        <img src={ImagePath} alt={OverlayText} />
-      </picture>
+      {
+        ImagePath ? (
+          <picture>
+            <img src={ImagePath} alt={OverlayText} />
+          </picture>
+        ) : children
+      }
     </div>
   );
 };

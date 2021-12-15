@@ -10,6 +10,7 @@ interface Props {
 }
 const Header = ({ Active }: Props) => {
   const [ menuOpen, setMenuOpen ] = useState(false);
+  let i = 0;
   return (
     <header className={menuOpen ? '' : styles.container}>
       <h1>Cmm Precision</h1>
@@ -28,9 +29,10 @@ const Header = ({ Active }: Props) => {
         </IconButton>
         <ul className={[ styles.navLinks, menuOpen ? styles.menuOpen : '' ].join(' ')}>
           {HeaderLinks.map(({ Name, Address }) => {
+            i++;
             if (typeof Address == 'string') {
               return (
-                <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={Name}>
+                <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={`${i}-${Name}`}>
                   <Link href={Address}>{Name}</Link>
                 </li>
               );
@@ -40,8 +42,9 @@ const Header = ({ Active }: Props) => {
                   <a>{Name}</a>
                   <ul>
                     {Object.entries(Address).map(([ Name, Address ]) => {
+                      i++;
                       return (
-                        <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={Name}>
+                        <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={`${i}-${Name}`}>
                           <Link href={Address}>{Name}</Link>
                         </li>
                       );

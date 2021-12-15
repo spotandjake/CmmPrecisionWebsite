@@ -33,7 +33,7 @@
   grid-template-columns: repeat(3, minmax(300px, 1fr));
 }
 // Responsive Styles
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .gridCol2 {
     display: grid;
     grid-template-columns: 1fr;
