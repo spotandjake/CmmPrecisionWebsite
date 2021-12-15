@@ -9,8 +9,7 @@ const MetaData = ({ PageTitle }: Props) => {
       <title>Cmm Precision || {PageTitle}</title>
       {/* TODO: Add Description */}
       <meta name="description" content="Cmm Precision Website" />
-      {/* TODO: Get A Better Icon */}
-      <link rel="icon" href={require('../../public/favicon.svg')} />
+      <link rel="icon" href={'/favicon.svg'} />
     </Head>
   );
 };

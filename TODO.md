@@ -1,6 +1,9 @@
 # TODOList
 + [ ] Generation 1
   + [x] Logo
+  + [x] Fix ImageCard Component So We Do Not Need To Pass in Children
+  + [x] Remove Unneeded Image Optimization Dependencies
+  + [ ] Fix Warning in Header.tsx
   + [ ] Pages
     + [ ] Index Page
       + [ ] Description
@@ -27,6 +30,7 @@
       + [x] Design
       + [ ] PHP Form
       + [x] Mobile Support
+      + [ ] Add Map
   + [x] Components
     + [x] Header
       + [x] Move color to the theme
@@ -46,6 +50,9 @@
   + [ ] Make Lighthouse Return 100% on all Pages
   + [ ] AutoDeploys from github
   + [ ] Setup hosting
+  + [ ] Work On Google Appearance
+    + [ ] Make SiteMap AutoGenerate From Nextjs Determine How ToDo This
+    + [ ] Make Robots.txt
 + [ ] Generation 2
   + [ ] Get A Logo And WebPage Designed Professionally
   + [ ] Fix Up Color Scheme

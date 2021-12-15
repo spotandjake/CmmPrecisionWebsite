@@ -39,7 +39,7 @@ const Header = ({ Active }: Props) => {
             } else {
               return (
                 <li className={Object.values(Address).includes(Name) ? styles.Active : ''}>
-                  <a>{Name}</a>
+                  <span>{Name}</span>
                   <ul>
                     {Object.entries(Address).map(([ Name, Address ]) => {
                       i++;
