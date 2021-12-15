@@ -18,7 +18,7 @@ const Contact = () => {
       {/* Contact Us Section */}
       <section className={styles.ContactSection}>
         <div>
-          <form>
+          <form action="https://form-test.spotandjake.repl.co/form.php" method="post">
             <label htmlFor="name">Name</label>
             <input required type="text" id="name" name="name" />
             <label htmlFor="email">Email</label>

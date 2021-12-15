@@ -31,6 +31,7 @@
     + [ ] Contact Page
       + [x] Design
       + [ ] PHP Form
+      + [ ] Failed Or Succeeded In Sending UI
       + [x] Mobile Support
       + [ ] Add Map
   + [x] Components
