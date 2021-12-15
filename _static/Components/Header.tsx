@@ -28,11 +28,28 @@ const Header = ({ Active }: Props) => {
         </IconButton>
         <ul className={[ styles.navLinks, menuOpen ? styles.menuOpen : '' ].join(' ')}>
           {HeaderLinks.map(({ Name, Address }) => {
-            return (
-              <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={Name}>
-                <Link href={Address}>{Name}</Link>
-              </li>
-            );
+            if (typeof Address == 'string') {
+              return (
+                <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={Name}>
+                  <Link href={Address}>{Name}</Link>
+                </li>
+              );
+            } else {
+              return (
+                <li className={Object.values(Address).includes(Name) ? styles.Active : ''}>
+                  <a>{Name}</a>
+                  <ul>
+                    {Object.entries(Address).map(([ Name, Address ]) => {
+                      return (
+                        <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={Name}>
+                          <Link href={Address}>{Name}</Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </li>
+              );
+            }
           })}
           <li onClick={() => setMenuOpen(false)}>
             <Link href="/ComingSoon" passHref={true}><button>Contact Us</button></Link>

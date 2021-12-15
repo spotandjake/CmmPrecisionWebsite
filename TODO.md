@@ -17,11 +17,16 @@
       + [x] Design
       + [x] Create
       + [ ] Mobile Support
-  + [ ] Components
-    + [ ] Header
+    + [ ] Certification Pages
+      + [ ] Page Design
+      + [ ] Calibration Cert Page
+      + [ ] Laboratory Cert Page
+      + [ ] Mobile Support
+  + [x] Components
+    + [x] Header
       + [x] Move color to the theme
-      + [ ] Add Nav Dropdowns
-      + [ ] Add Support For DropDown Type In The Config
+      + [x] Add Nav Dropdowns
+      + [x] Add Support For DropDown Type In The Config
     + [x] Footer
       + [x] Add Large Footer
         + [x] Add Contact Form Area

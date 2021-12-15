@@ -1,5 +1,6 @@
+type Index = { [key: string]: string | Index };
 interface NavigationConfig {
-  Pages: { [key: string]: string };
+  Pages: Index;
   Header: string[];
   Footer: string[];
 }
@@ -7,7 +8,10 @@ export const Navigation: NavigationConfig = {
   Pages: {
     'Home': '/',
     'About': '/ComingSoon',
-    'Certifications': '/ComingSoon',
+    'Certifications': {
+      'Calibration Cert': '/ComingSoon',
+      'Laboratory Cert': '/ComingSoon',
+    },
     'Contact Us': '/ComingSoon'
   },
   Header: [
