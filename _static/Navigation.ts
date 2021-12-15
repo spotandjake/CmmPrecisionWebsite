@@ -7,7 +7,7 @@ interface NavigationConfig {
 export const Navigation: NavigationConfig = {
   Pages: {
     'Home': '/',
-    'About': '/ComingSoon',
+    'About': '/About',
     'Certifications': {
       'Calibration Cert': '/ComingSoon',
       'Laboratory Cert': '/ComingSoon',

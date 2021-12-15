@@ -7,6 +7,7 @@ import Hero from '../_static/Components/Hero';
 import ImageCard from '../_static/Components/ImageCard';
 import Header from '../_static/Components/Header';
 import Footer from '../_static/Components/Footer';
+import { Navigation } from '../_static/Navigation';
 
 const Home = () => {
   return (
@@ -35,7 +36,7 @@ const Home = () => {
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus quam leo, et tincidunt risus porttitor ut. Aenean enim magna, volutpat in odio nec, pretium sagittis lacus. Integer non elit a dolor maximus vehicula quis id dolor. Ut malesuada elit quis ante volutpat, nec finibus justo interdum. Nulla porta leo non enim congue sagittis. Mauris aliquam porttitor dui nec fermentum. Donec scelerisque ex vel ipsum vulputate, at egestas dolor lobortis. Nullam tristique egestas rhoncus.
               </p>
-              <Link href="/ComingSoon" passHref={true}><button>Read More</button></Link>
+              <Link href={Navigation.Pages['About']} passHref={true}><button>Read More</button></Link>
             </div>
           </div>
         </div>
@@ -45,10 +46,10 @@ const Home = () => {
           <div className={styles.gridCol2}>
             <div>
               <p className={styles.gridText}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis tellus pellentesque, eleifend nisl in, auctor nunc. Aliquam vulputate non nibh sit amet congue. Fusce quis finibus nulla. Aenean non hendrerit tellus, ac fringilla arcu. Aliquam magna ipsum, finibus et est sed, porta bibendum lacus. Sed dignissim metus risus. Duis porta rhoncus enim, vehicula vulputate justo tristique ac. Nulla ac enim non ex vestibulum tristique. Nulla facilisi. Sed nunc elit, tristique vel porta vel, convallis nec justo.
+                With over 20 years of experience in the field, we have the ability to provide a wide range of services to our clients and you will know you are getting quality measurements. Offering a wide range of services to suit your needs along with a wide range of tools and equipment, we are able to provide you with quality results every time.
               </p>
               <p>
-                Pellentesque cursus sit amet orci sed tristique. Mauris tellus neque, rutrum ut mauris quis, dapibus varius massa. Suspendisse id elit ex. Maecenas sed ante ut metus porta venenatis. Donec at vulputate sem, non eleifend purus. Aliquam dictum vestibulum tempus. Proin nec porta justo. Etiam nec laoreet tellus. Aliquam scelerisque, nisi nec dignissim condimentum, lacus ex fermentum erat, quis vestibulum elit diam quis felis.
+                Having done jobs for large multinational corporations and small local business CMM Precision is perfect for any quality services you may need. 
               </p>
             </div>
             <div>

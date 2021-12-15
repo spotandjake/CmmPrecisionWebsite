@@ -1,0 +1,14 @@
+.aboutSection {
+  height: max-content;
+  margin: 1rem 3rem;
+  .flexGrid {
+    display: flex;
+    div {
+      padding: 0 .5rem;
+    }
+  }
+  picture {
+    border-radius: .5rem;
+    overflow: hidden;
+  }
+}

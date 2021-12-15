@@ -3,7 +3,7 @@
   + [x] Logo
   + [x] Fix ImageCard Component So We Do Not Need To Pass in Children
   + [x] Remove Unneeded Image Optimization Dependencies
-  + [ ] Fix Warning in Header.tsx
+  + [x] Fix Warning in Header.tsx
   + [ ] Pages
     + [ ] Index Page
       + [ ] Description
@@ -11,8 +11,10 @@
       + [ ] Main Content
       + [x] Mobile Support
     + [ ] About Pages
-      + [ ] Design
-      + [ ] Create
+      + [x] Design
+      + [x] Create
+      + [ ] Team Section
+      + [ ] Mobile Support
     + [x] Coming Soon Page
       + [x] Design
       + [x] Create

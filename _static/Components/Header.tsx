@@ -10,7 +10,6 @@ interface Props {
 }
 const Header = ({ Active }: Props) => {
   const [ menuOpen, setMenuOpen ] = useState(false);
-  let i = 0;
   return (
     <header className={menuOpen ? '' : styles.container}>
       <h1>Cmm Precision</h1>
@@ -28,23 +27,21 @@ const Header = ({ Active }: Props) => {
           />
         </IconButton>
         <ul className={[ styles.navLinks, menuOpen ? styles.menuOpen : '' ].join(' ')}>
-          {HeaderLinks.map(({ Name, Address }) => {
-            i++;
+          {HeaderLinks.map(({ Name, Address }, index) => {
             if (typeof Address == 'string') {
               return (
-                <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={`${i}-${Name}`}>
+                <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={index}>
                   <Link href={Address}>{Name}</Link>
                 </li>
               );
             } else {
               return (
-                <li className={Object.values(Address).includes(Name) ? styles.Active : ''}>
+                <li className={Object.values(Address).includes(Name) ? styles.Active : ''} key={index}>
                   <span>{Name}</span>
                   <ul>
-                    {Object.entries(Address).map(([ Name, Address ]) => {
-                      i++;
+                    {Object.entries(Address).map(([ Name, Address ], index) => {
                       return (
-                        <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={`${i}-${Name}`}>
+                        <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={index}>
                           <Link href={Address}>{Name}</Link>
                         </li>
                       );
