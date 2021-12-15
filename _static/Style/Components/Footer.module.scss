@@ -7,10 +7,10 @@
   background-color: #111;
   .footer {
     // Temporary Height
-    height: 15rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
+    padding: 2.5rem 0;
     ul {
       // Media Stuff
       &.mediaList {
@@ -57,5 +57,13 @@
 @media (max-width: 900px) {
   .container span {
     text-align: center;
+  }
+  .footer {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media (max-width: 700px) {
+  .moto {
+    display: none;
   }
 }

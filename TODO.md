@@ -22,6 +22,10 @@
       + [ ] Calibration Cert Page
       + [ ] Laboratory Cert Page
       + [ ] Mobile Support
+    + [ ] Contact Page
+      + [x] Design
+      + [ ] PHP Form
+      + [x] Mobile Support
   + [x] Components
     + [x] Header
       + [x] Move color to the theme
@@ -36,7 +40,6 @@
   + [ ] Test page
   + [ ] Tweak Design
   + [ ] Adjust Color Theme Depending on user preference
-  + [ ] Add Mobile Support
   + [ ] WebP Image For Browsers That Support Them
   + [ ] Lazy Load images
   + [ ] Make Lighthouse Return 100% on all Pages
@@ -45,4 +48,3 @@
 + [ ] Generation 2
   + [ ] Get A Logo And WebPage Designed Professionally
   + [ ] Fix Up Color Scheme
-  + [ ] Try to make the page look a little less cluttered by segmenting it into blocks

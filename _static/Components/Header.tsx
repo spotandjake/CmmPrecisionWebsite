@@ -52,7 +52,7 @@ const Header = ({ Active }: Props) => {
             }
           })}
           <li onClick={() => setMenuOpen(false)}>
-            <Link href="/ComingSoon" passHref={true}><button>Contact Us</button></Link>
+            <Link href="/Contact" passHref={true}><button>Contact Us</button></Link>
           </li>
         </ul>
       </nav>

@@ -3,7 +3,7 @@
   display: flex;
   width: 100%;
   padding: .25rem var(--size-gutter-1);
-  background-color: #111;
+  background-color: var(--color-Background-3);
   top: 0;
   z-index: 1;
   position: sticky;
@@ -101,6 +101,7 @@
       ul {
         display: block !important;
         position: static !important;
+        padding: 0 !important;
         margin: 0 !important;
         background-color: transparent !important;
         a {

@@ -12,7 +12,7 @@ export const Navigation: NavigationConfig = {
       'Calibration Cert': '/ComingSoon',
       'Laboratory Cert': '/ComingSoon',
     },
-    'Contact Us': '/ComingSoon'
+    'Contact Us': '/Contact'
   },
   Header: [
     'Home',

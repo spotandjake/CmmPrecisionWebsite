@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className={styles.container}>
       <div className={styles.footer}>
-        <div>
+        <div className={styles.moto}>
           <h3>Cmm Precision</h3>
           <p>Cmm Inspection That Meats Your Needs.</p>
         </div>
