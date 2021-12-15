@@ -1,6 +1,5 @@
 .container {
   scroll-snap-type: y mandatory;
-  // TODO: Add Mobile Support
   .ContactSection {
     background-color: var(--color-Background-4);
     scroll-snap-align: start;

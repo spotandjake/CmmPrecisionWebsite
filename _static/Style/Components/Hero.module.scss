@@ -16,6 +16,7 @@
         margin: auto;
       }
       h2 {
+        text-align: center;
         color: var(--color-Text-0);
         font-size: 7rem;
       }
@@ -39,8 +40,20 @@
       font-size: 4rem !important;
     }
   }
+  .hero.fullScreen {
+    height: calc(100vh - 5.08rem);
+    width: 100%;
+  }
 }
 @media (max-width: 1000px) {
+  .hero.fullScreen {
+    height: calc(100vh - 5.08rem);
+    width: 100%;
+    picture, img {
+      min-height: calc(100vh - 5.08rem);
+      width: auto;
+    }
+  }
   .hero h2 {
     font-size: 2rem !important;
   }

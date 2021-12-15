@@ -4,7 +4,7 @@ import MetaData from '../_static/Components/MetaData';
 import Header from '../_static/Components/Header';
 import Footer from '../_static/Components/Footer';
 import Hero from '../_static/Components/Hero';
-import ImageCard from '../_static/Components/ImageCard';
+// import ImageCard from '../_static/Components/ImageCard';
 
 const About = () => {
   return (
@@ -97,12 +97,12 @@ const About = () => {
           </div>
         </div>
         {/* Our Team */}
-        <div>
-          <h3>Services</h3>
+        {/* <div>
+          <h3>Our Team</h3>
           <div className={styles.flexGrid}>
             <ImageCard ImagePath={'/Images/Hero.jpg'} OverlayText={'Dave Follest'} />
           </div>
-        </div>
+        </div> */}
       </section>
       {/* Footer */}
       <Footer />

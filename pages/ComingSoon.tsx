@@ -11,7 +11,7 @@ const ComingSoon = () => {
       {/* Header */}
       <Header Active='None' />
       {/* Hero */}
-      <Hero>
+      <Hero Fullscreen={true}>
         <h2>This Page is Coming Soon</h2>
         <Link href="/" passHref={true}><button>Return To Home</button></Link>
       </Hero>

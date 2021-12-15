@@ -1,10 +1,8 @@
 // Footer Container
-// TODO: improve this
 .container {
   width: 100%;
   padding: 1rem var(--size-gutter-1);
-  // TODO: make color var for this color
-  background-color: #111;
+  background-color: var(--color-Background-3);
   .footer {
     // Temporary Height
     display: grid;

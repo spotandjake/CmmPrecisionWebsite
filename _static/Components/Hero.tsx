@@ -2,10 +2,11 @@ import styles from '../Style/Components/Hero.module.scss';
 
 interface Props {
   children: JSX.Element[] | JSX.Element;
+  Fullscreen?: Boolean ;
 }
-const Hero = ({ children }: Props) => {
+const Hero = ({ children, Fullscreen = false }: Props) => {
   return (
-    <section className={styles.hero}>
+    <section className={[ styles.hero, Fullscreen ? styles.fullScreen : '' ].join(' ')}>
       <div>
         <div>
           {children}

@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.footer}>
         <div className={styles.moto}>
-          <h3>Cmm Precision</h3>
+          <h3><Link href={'/'}>Cmm Precision</Link></h3>
           <p>Cmm Inspection That Meats Your Needs.</p>
         </div>
         <div>
@@ -27,13 +27,12 @@ const Footer = () => {
         <div>
           <h3>Media</h3>
           <ul className={styles.mediaList}>
-            {/* TODO: Get this link */}
             <li>
               <SvgIcon
                 component={LinkedInIcon}
                 viewBox="0 0 24 24"
               />
-              <Link href="/">LinkedIn</Link></li>
+              <Link href="https://ca.linkedin.com/in/david-follest-83458841">LinkedIn</Link></li>
           </ul>
         </div>
       </div>

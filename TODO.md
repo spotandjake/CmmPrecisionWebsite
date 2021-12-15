@@ -13,16 +13,16 @@
     + [ ] About Pages
       + [x] Design
       + [x] Create
-      + [ ] Team Section
+      + [ ] Team View Area
       + [ ] Mobile Support
     + [x] Coming Soon Page
       + [x] Design
       + [x] Create
-      + [ ] Mobile Support
+      + [x] Mobile Support
     + [x] 404 Page
       + [x] Design
       + [x] Create
-      + [ ] Mobile Support
+      + [x] Mobile Support
     + [ ] Certification Pages
       + [ ] Page Design
       + [ ] Calibration Cert Page
@@ -45,14 +45,14 @@
         + [x] Add Social Area
         + [x] Add Basic Index Area
   + [ ] Get new images
-  + [ ] Test page
-  + [ ] Tweak Design
-  + [ ] Adjust Color Theme Depending on user preference
   + [x] WebP Image For Browsers That Support Them
   + [x] Lazy Load images
   + [ ] Make Lighthouse Return 100% on all Pages
-  + [ ] AutoDeploys from github
+    + [ ] Determine Good way to serve the correct image size statically with react
+    + [ ] Determine width and height for images
+    + [ ] make sure images are displayed at their correct aspect ratio and we are just cropping
   + [ ] Setup hosting
+    + [ ] AutoDeploys from github
   + [ ] Work On Google Appearance
     + [ ] Make SiteMap AutoGenerate From Nextjs Determine How ToDo This
     + [ ] Make Robots.txt

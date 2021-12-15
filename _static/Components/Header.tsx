@@ -12,7 +12,7 @@ const Header = ({ Active }: Props) => {
   const [ menuOpen, setMenuOpen ] = useState(false);
   return (
     <header className={menuOpen ? '' : styles.container}>
-      <h1>Cmm Precision</h1>
+      <h1><Link href={'/'}>Cmm Precision</Link></h1>
       <nav className={styles.navContainer}>
         <IconButton 
           aria-label="Menu Toggle" 
