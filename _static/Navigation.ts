@@ -9,7 +9,7 @@ export const Navigation: NavigationConfig = {
     'Home': '/',
     'About': '/About',
     'Certifications': {
-      'Calibration Cert': '/ComingSoon',
+      'Calibration Cert': '/CalibrationCert',
       'Laboratory Cert': '/ComingSoon',
     },
     'Contact Us': '/Contact'

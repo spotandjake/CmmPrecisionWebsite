@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.footer}>
         <div className={styles.moto}>
           <h3><Link href={'/'}>Cmm Precision</Link></h3>
-          <p>Cmm Inspection That Meats Your Needs.</p>
+          <p>Cmm Inspection That Meets Your Needs.</p>
         </div>
         <div>
           <h3>Navigation</h3>
@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
       <div className={styles.bottom}>
         <span>
-          FOLLEST CMM &amp; PRECISION TOOLING , 1-289-314-7770 , <a href="mailto:dfollest@live.com">dfollest@live.com</a>
+          FOLLEST CMM &amp; PRECISION TOOLING, <a href="tel:289-314-7770">(289)-314-7770</a>, <a href="mailto:dfollest@live.com">dfollest@live.com</a>
         </span>
       </div>
     </footer>

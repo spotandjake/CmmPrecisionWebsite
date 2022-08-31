@@ -36,7 +36,7 @@ const About = () => {
                     Consulting Fixturing And Prototyping
                   </li>
                   <li>
-                    Gauge R&mp;R's
+                    Gauge R&R's
                   </li>
                   <li>
                     Co-Relation Study's

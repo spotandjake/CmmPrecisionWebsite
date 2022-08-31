@@ -41,12 +41,12 @@ const Home = () => {
           </div>
         </div>
         {/* Experience */}
-        <div className={styles.Article}>
+        <div className={[styles.Article, styles.Desktop].join(' ')}>
           <h3>Experience</h3>
           <div className={styles.gridCol2}>
             <div>
               <p className={styles.gridText}>
-                With over 20 years of experience in the field, we have the ability to provide a wide range of services to our clients and you will know you are getting quality measurements. Offering a wide range of services to suit your needs along with a wide range of tools and equipment, we are able to provide you with quality results every time.
+                With over 20 years of experience in the field, we have the ability to provide a wide range of services to our clients and ensure you are getting quality measurements. Offering a wide range of services to suit your needs along with a wide range of tools and equipment, we are able to provide you with quality results every time.
               </p>
               <p>
                 Having done jobs for large multinational corporations and small local business CMM Precision is perfect for any quality services you may need. 
@@ -82,8 +82,8 @@ const Home = () => {
         <div className={styles.Article}>
           <h3>Equipment</h3>
           <div className={styles.GridCards2}>
-            <ImageCard ImagePath={'/Images/cmm.jpg'} OverlayText={'Brown Sharp One 5.5.5 CMM'} />
-            <ImageCard ImagePath={'/Images/romorArm.jpg'} OverlayText={'Infinitely 2.0 Romer Arm'} />
+            <ImageCard ImagePath={'/Images/cmm.jpg'} OverlayText={'Brown & Sharp One CMM'} />
+            <ImageCard ImagePath={'/Images/romorArm.jpg'} OverlayText={'Infinity 2.0 Romor Arm'} />
           </div>
         </div>
       </main>

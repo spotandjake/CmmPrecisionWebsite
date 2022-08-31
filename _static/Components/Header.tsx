@@ -8,6 +8,7 @@ import { HeaderLinks } from '../Navigation';
 interface Props {
   Active: string;
 }
+// TODO: Make The Header Active if a sub element is Active
 const Header = ({ Active }: Props) => {
   const [ menuOpen, setMenuOpen ] = useState(false);
   return (
@@ -36,7 +37,7 @@ const Header = ({ Active }: Props) => {
               );
             } else {
               return (
-                <li className={Object.values(Address).includes(Name) ? styles.Active : ''} key={index}>
+                <li className={Object.keys(Address).includes(Active) ? styles.Active : ''} key={index}>
                   <span>{Name}</span>
                   <ul>
                     {Object.entries(Address).map(([ Name, Address ], index) => {
