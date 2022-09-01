@@ -10,7 +10,8 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   experimental: {
-    workerThreads: true
+    workerThreads: true,
+    runtime: 'experimental-edge',
   },
   i18n: {
     locales: ['en'],

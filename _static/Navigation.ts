@@ -8,16 +8,16 @@ export const Navigation: NavigationConfig = {
   Pages: {
     'Home': '/',
     'About': '/About',
-    'Certifications': {
-      'Calibration Cert': '/CalibrationCert',
-      'Laboratory Cert': '/ComingSoon',
-    },
+    // 'Certifications': {
+    //   'Calibration Cert': '/CalibrationCert',
+    //   'Laboratory Cert': '/ComingSoon',
+    // },
     'Contact Us': '/Contact'
   },
   Header: [
     'Home',
     'About',
-    'Certifications'
+    // 'Certifications'
   ],
   Footer: [
     'Home',
