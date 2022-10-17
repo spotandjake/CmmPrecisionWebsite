@@ -13,7 +13,7 @@ module.exports = {
     workerThreads: true,
     newNextLinkBehavior: true,
     optimizeCss: true,
-    runtime: 'experimental-edge',
+    // runtime: 'experimental-edge',
   },
   i18n: {
     locales: ['en'],
