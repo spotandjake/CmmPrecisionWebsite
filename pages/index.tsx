@@ -34,7 +34,7 @@ const Home = () => {
             </div>
             <div className={styles.gridText}>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus quam leo, et tincidunt risus porttitor ut. Aenean enim magna, volutpat in odio nec, pretium sagittis lacus. Integer non elit a dolor maximus vehicula quis id dolor. Ut malesuada elit quis ante volutpat, nec finibus justo interdum. Nulla porta leo non enim congue sagittis. Mauris aliquam porttitor dui nec fermentum. Donec scelerisque ex vel ipsum vulputate, at egestas dolor lobortis. Nullam tristique egestas rhoncus.
+                With over 20 years of experience in the field, we have the ability to provide a wide range of services to our clients and ensure you are getting quality measurements. Offering a wide range of services to suit your needs along with a wide range of tools and equipment, we are able to provide you with quality results every time.
               </p>
               <Link href={Navigation.Pages['About']} passHref={true}><button>Read More</button></Link>
             </div>
