@@ -10,7 +10,10 @@
     // Form Area
     form {
       padding: 1rem 5rem;
-      input[type="text"], input[type="email"], input[type="tel"], textarea {
+      input[type='text'],
+      input[type='email'],
+      input[type='tel'],
+      textarea {
         height: 2rem;
         width: 100%;
         margin: 1rem 0;
@@ -21,17 +24,17 @@
         background-color: var(--color-Background-4) !important;
         border-bottom: 1px solid var(--color-Text-0);
       }
-      input[type="submit"] {
+      input[type='submit'] {
         width: calc(100% - 5rem);
         outline: none;
         border: none;
-        border-radius: .25rem;
-        margin: .5rem 2.5rem;
-        padding: .5rem 0;
+        border-radius: 0.25rem;
+        margin: 0.5rem 2.5rem;
+        padding: 0.5rem 0;
         background-color: var(--color-Background-2);
         cursor: pointer;
         &:hover {
-          opacity: .75;
+          opacity: 0.75;
         }
       }
       textarea {
@@ -69,16 +72,17 @@
     height: 20rem;
     width: 40rem;
     margin: auto;
-    color: var(--color-Text-3);
-    background-color: #fff;
+    color: var(--color-Text-2);
+    background-color: var(--color-Background-4);
     border-radius: 1rem;
     overflow: hidden;
-    p {
-      padding: 1rem;
+    h1 {
+      padding: 1.5rem;
+      text-align: center;
       flex-grow: 1;
     }
     .statusBar {
-      height: 2rem;
+      height: 0.25rem;
       width: 100%;
       background-color: #f00;
       &.Success {
@@ -105,7 +109,7 @@
       padding: 0 5rem;
       ul {
         padding-inline-start: 0;
-        padding-left: .75rem;
+        padding-left: 0.75rem;
       }
     }
   }
@@ -113,12 +117,13 @@
 @media (max-width: 600px) {
   .ContactSection {
     grid-template-columns: 1fr !important;
-    form, .Info {
-      padding: 0 .5rem !important;
+    form,
+    .Info {
+      padding: 0 0.5rem !important;
     }
     ul {
       padding-inline-start: 0;
-      padding-left: .75rem;
+      padding-left: 0.75rem;
     }
   }
 }
