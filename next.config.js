@@ -4,7 +4,6 @@ module.exports = {
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
-  modern: true,
   optimizeFonts: true,
   crossOrigin: 'use-credentials',
   eslint: {
