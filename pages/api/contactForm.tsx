@@ -39,7 +39,7 @@ export default async function handler(
         `Email: ${request.body.email}`,
       ].join('\n'), // plain text body
     })
-    .catch((err) => {
+    .catch((err: any) => {
       console.log('There was an error');
       console.log(err.message);
       response.redirect(307, '/Contact?failed=1');

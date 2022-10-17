@@ -5,7 +5,7 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   optimizeFonts: true,
-  crossOrigin: 'use-credentials',
+  // crossOrigin: 'use-credentials',
   eslint: {
     ignoreDuringBuilds: true,
   },

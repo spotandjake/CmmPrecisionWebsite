@@ -14,14 +14,16 @@
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.3",
     "critters": "^0.0.16",
-    "next": "^12.2.5",
+    "next": "^12.3.1",
     "next-sitemap": "^3.1.28",
     "nextjs-google-analytics": "^2.1.0",
+    "nodemailer": "^6.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.7.14",
+    "@types/nodemailer": "^6.4.6",
     "@types/react": "^18.0.21",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "eslint": "^8.23.0",
