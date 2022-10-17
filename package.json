@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap",
+    "build": "next-sitemap && next build",
     "export": "next export",
     "start": "next start",
     "lint": "next lint"
@@ -15,6 +15,7 @@
     "@mui/material": "^5.10.3",
     "next": "^12.2.5",
     "next-sitemap": "^3.1.28",
+    "nextjs-google-analytics": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
