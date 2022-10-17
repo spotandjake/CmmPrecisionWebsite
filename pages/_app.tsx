@@ -9,7 +9,7 @@ import type { AppProps } from 'next/app';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <GoogleAnalytics trackPageViews />
+      <GoogleAnalytics trackPageViews strategy="lazyOnload" />
       <Component {...pageProps} />
     </>
   );
