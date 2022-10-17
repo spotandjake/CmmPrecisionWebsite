@@ -1,65 +1,61 @@
 # TODOList
-+ [ ] Generation 1
-  + [x] Logo
-  + [x] Fix ImageCard Component So We Do Not Need To Pass in Children
-  + [x] Remove Unneeded Image Optimization Dependencies
-  + [x] Fix Warning in Header.tsx
-  + [ ] Pages
-    + [ ] Index Page
-      + [ ] Description
-      + [x] Hero Image
-      + [ ] Main Content
-      + [x] Mobile Support
-    + [ ] About Pages
-      + [x] Design
-      + [x] Create
-      + [ ] Team View Area
-      + [ ] Mobile Support
-    + [x] Coming Soon Page
-      + [x] Design
-      + [x] Create
-      + [x] Mobile Support
-    + [x] 404 Page
-      + [x] Design
-      + [x] Create
-      + [x] Mobile Support
-    + [ ] Certification Pages
-      + [ ] Page Design
-      + [ ] Calibration Cert Page
-      + [ ] Laboratory Cert Page
-      + [ ] Mobile Support
-    + [ ] Contact Page
-      + [x] Design
-      + [ ] PHP Form
-      + [x] Failed Or Succeeded In Sending UI
-      + [x] Mobile Support
-      + [ ] Add Map
-  + [x] Components
-    + [x] Header
-      + [x] Move color to the theme
-      + [x] Add Nav Dropdowns
-      + [x] Add Support For DropDown Type In The Config
-    + [x] Footer
-      + [x] Add Large Footer
-        + [x] Add Contact Form Area
-        + [x] Add Social Area
-        + [x] Add Basic Index Area
-  + [x] WebP Image For Browsers That Support Them
-  + [x] Lazy Load images
 
+- [ ] Generation 1
 
+  - [x] Logo
+  - [x] Fix ImageCard Component So We Do Not Need To Pass in Children
+  - [x] Remove Unneeded Image Optimization Dependencies
+  - [x] Fix Warning in Header.tsx
+  - [ ] Pages
+    - [ ] Index Page
+      - [ ] Description
+      - [x] Hero Image
+      - [ ] Main Content
+      - [x] Mobile Support
+    - [ ] About Pages
+      - [x] Design
+      - [x] Create
+      - [ ] Team View Area
+      - [ ] Mobile Support
+    - [x] Coming Soon Page
+      - [x] Design
+      - [x] Create
+      - [x] Mobile Support
+    - [x] 404 Page
+      - [x] Design
+      - [x] Create
+      - [x] Mobile Support
+    - [ ] Certification Pages
+      - [ ] Page Design
+      - [ ] Calibration Cert Page
+      - [ ] Laboratory Cert Page
+      - [ ] Mobile Support
+    - [ ] Contact Page
+      - [x] Design
+      - [ ] PHP Form
+      - [x] Failed Or Succeeded In Sending UI
+      - [x] Mobile Support
+      - [ ] Add Map
+  - [x] Components
+    - [x] Header
+      - [x] Move color to the theme
+      - [x] Add Nav Dropdowns
+      - [x] Add Support For DropDown Type In The Config
+    - [x] Footer
+      - [x] Add Large Footer
+        - [x] Add Contact Form Area
+        - [x] Add Social Area
+        - [x] Add Basic Index Area
+  - [x] WebP Image For Browsers That Support Them
+  - [x] Lazy Load images
 
-
-  + [ ] Get new images
-  + [ ] Make Lighthouse Return 100% on all Pages
-    + [ ] Determine Good way to serve the correct image size statically with react
-    + [ ] Determine width and height for images
-    + [ ] make sure images are displayed at their correct aspect ratio and we are just cropping
-  + [ ] Setup hosting
-    + [ ] AutoDeploys from github
-  + [ ] Work On Google Appearance
-    + [ ] Make SiteMap AutoGenerate From Nextjs Determine How ToDo This
-    + [ ] Make Robots.txt
-+ [ ] Generation 2
-  + [ ] Get A Logo And WebPage Designed Professionally
-  + [ ] Fix Up Color Scheme
+  - [ ] Get new images
+  - [ ] Make Lighthouse Return 100% on all Pages
+    - [ ] Determine Good way to serve the correct image size statically with react
+    - [ ] Determine width and height for images
+    - [ ] make sure images are displayed at their correct aspect ratio and we are just cropping
+  - [x] Setup hosting
+    - [x] AutoDeploys from github
+  - [x] Work On Google Appearance
+    - [x] Make SiteMap AutoGenerate From Nextjs Determine How ToDo This
+    - [x] Make Robots.txt
