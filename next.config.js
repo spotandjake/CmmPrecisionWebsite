@@ -6,11 +6,14 @@ module.exports = {
   swcMinify: true,
   modern: true,
   optimizeFonts: true,
+  crossOrigin: 'use-credentials',
   eslint: {
     ignoreDuringBuilds: true,
   },
   experimental: {
     workerThreads: true,
+    newNextLinkBehavior: true,
+    optimizeCss: true,
     runtime: 'experimental-edge',
   },
   i18n: {
