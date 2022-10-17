@@ -16,7 +16,7 @@
       - [x] Design
       - [x] Create
       - [ ] Team View Area
-      - [ ] Mobile Support
+      - [x] Mobile Support
     - [x] Coming Soon Page
       - [x] Design
       - [x] Create
@@ -32,7 +32,7 @@
       - [ ] Mobile Support
     - [ ] Contact Page
       - [x] Design
-      - [ ] PHP Form
+      - [x] PHP Form
       - [x] Failed Or Succeeded In Sending UI
       - [x] Mobile Support
       - [ ] Add Map

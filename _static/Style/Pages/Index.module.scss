@@ -4,7 +4,7 @@
   h3 {
     width: 100%;
     font-size: 2rem;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     text-align: center;
   }
   overflow: hidden;
@@ -15,12 +15,13 @@
   & > div {
     padding: 0 1rem;
     img {
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       aspect-ratio: 16 / 9;
     }
   }
 }
-.GridCards2, .GridCards3 {
+.GridCards2,
+.GridCards3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, max-content);
   grid-gap: 2rem;
@@ -44,11 +45,13 @@
       }
     }
   }
-  .GridCards2, .GridCards3 {
+  .GridCards2,
+  .GridCards3 {
     grid-template-columns: 1fr;
   }
   .gridText {
     order: -1;
+    margin: 0.75rem 0;
   }
   .Desktop {
     display: none;

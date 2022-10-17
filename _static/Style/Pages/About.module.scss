@@ -4,11 +4,36 @@
   .flexGrid {
     display: flex;
     div {
-      padding: 0 .5rem;
+      padding: 0 0.5rem;
     }
   }
   picture {
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     overflow: hidden;
+  }
+}
+.pictureBox,
+.columns {
+  display: block;
+}
+@media (max-width: 1000px) {
+  .aboutSection {
+    .flexGrid {
+      width: 100%;
+      div {
+        width: 100%;
+        word-wrap: break-word;
+        overflow: hidden;
+      }
+    }
+    .pictureBox {
+      display: none;
+    }
+    .columns:first-of-type {
+      display: block;
+    }
+    .columns {
+      display: none;
+    }
   }
 }

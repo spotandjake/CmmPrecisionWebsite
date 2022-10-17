@@ -8,7 +8,8 @@ import Hero from '../_static/Components/Hero';
 // About Content
 const alphabetSort = (arr: string[]) => arr.sort();
 const lengthSort = (arr: string[]) => arr.sort((a, b) => b.length - a.length);
-const alphabetlengthSort = (arr: string[]) => arr.sort((a, b) => a.localeCompare(b)*10+b.length-a.length);
+const alphabetlengthSort = (arr: string[]) =>
+  arr.sort((a, b) => a.localeCompare(b) * 10 + b.length - a.length);
 const aboutContenRowCount = 12;
 const aboutContent = [
   'Cmm Programming And Operating',
@@ -29,7 +30,7 @@ const aboutContent = [
   'Process Development Consulting',
   'General Consulting',
   '3rd Party Sorting',
-  '3rd Party Rework'
+  '3rd Party Rework',
 ];
 // About Page
 const About = () => {
@@ -39,14 +40,22 @@ const About = () => {
   for (let i = 0; i < sortedContent.length; i += aboutContenRowCount) {
     const chunk = lengthSort(sortedContent.slice(i, i + aboutContenRowCount));
     // Build it
-    columns.push(<div><ul>{chunk.map(v => <li>{v}</li>)}</ul></div>)
+    columns.push(
+      <div className={styles.columns}>
+        <ul>
+          {chunk.map((v) => (
+            <li>{v}</li>
+          ))}
+        </ul>
+      </div>
+    );
   }
   // Return Element
   return (
     <section className={styles.container}>
-      <MetaData PageTitle='About Us' />
+      <MetaData PageTitle="About Us" />
       {/* Header */}
-      <Header Active='About' />
+      <Header Active="About" />
       {/* Hero */}
       <Hero>
         <h2>About Us</h2>
@@ -58,16 +67,20 @@ const About = () => {
           <div>
             <h2>About Us</h2>
             <p>
-              &ensp;With over 30 years of experience in the measurement field, we have the ability to provide a diverse range of quality services to our clients. Cmm Precision offers a wide array of quality services to many clients in the automotive, aerospace, medical, and many other industries.
+              &ensp;With over 30 years of experience in the measurement field,
+              we have the ability to provide a diverse range of quality services
+              to our clients. Cmm Precision offers a wide array of quality
+              services to many clients in the automotive, aerospace, medical,
+              and many other industries.
             </p>
             <h3>FOLLEST CMM &amp; PRECISION TOOLING OFFERS</h3>
             <div className={styles.flexGrid}>{columns}</div>
           </div>
-          <div>
+          <div className={styles.pictureBox}>
             <picture>
               <source srcSet={'/Images/cmm.webp'} type="image/webp" />
               <source srcSet={'/Images/cmm.jpg'} type="image/jpeg" />
-              <img src={'/Images/cmm.jpg'} alt='Cmm Image' />
+              <img src={'/Images/cmm.jpg'} alt="Cmm Image" />
             </picture>
           </div>
         </div>
