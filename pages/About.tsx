@@ -58,7 +58,7 @@ const About = () => {
           <div>
             <h2>About Us</h2>
             <p>
-              &ensp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus quam leo, et tincidunt risus porttitor ut. Aenean enim magna, volutpat in odio nec, pretium sagittis lacus. Integer non elit a dolor maximus vehicula quis id dolor. Ut malesuada elit quis ante volutpat, nec finibus justo interdum. Nulla porta leo non enim congue sagittis. Mauris aliquam porttitor dui nec fermentum. Donec scelerisque ex vel ipsum vulputate, at egestas dolor lobortis. Nullam tristique egestas rhoncus.
+              &ensp;With over 30 years of experience in the measurement field, we have the ability to provide a diverse range of quality services to our clients. Cmm Precision offers a wide array of quality services to many clients in the automotive, aerospace, medical, and many other industries.
             </p>
             <h3>FOLLEST CMM &amp; PRECISION TOOLING OFFERS</h3>
             <div className={styles.flexGrid}>{columns}</div>

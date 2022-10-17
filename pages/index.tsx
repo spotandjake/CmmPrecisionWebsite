@@ -34,7 +34,7 @@ const Home = () => {
             </div>
             <div className={styles.gridText}>
               <p>
-                With over 20 years of experience in the field, we have the ability to provide a wide range of services to our clients and ensure you are getting quality measurements. Offering a wide range of services to suit your needs along with a wide range of tools and equipment, we are able to provide you with quality results every time.
+                With over 30 years of experience in the measurement field, we have the ability to provide a diverse range of quality services to our clients. Cmm Precision offers a wide array of quality services to many clients in the automotive, aerospace, medical, and many other industries.
               </p>
               <Link href={Navigation.Pages['About']} passHref={true}><button>Read More</button></Link>
             </div>
@@ -46,10 +46,10 @@ const Home = () => {
           <div className={styles.gridCol2}>
             <div>
               <p className={styles.gridText}>
-                With over 20 years of experience in the field, we have the ability to provide a wide range of services to our clients and ensure you are getting quality measurements. Offering a wide range of services to suit your needs along with a wide range of tools and equipment, we are able to provide you with quality results every time.
+                Cmm Precision has been serving clients for over 30 years with quality measurements and services. Allowing you to focus on your business while we focus on the quality of your products.
               </p>
               <p>
-                Having done jobs for large multinational corporations and small local business CMM Precision is perfect for any quality services you may need. 
+                Having done jobs for large multinational corporations and small local business Cmm Precision is perfect for any quality services you may need. 
               </p>
             </div>
             <div>
