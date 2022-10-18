@@ -7,7 +7,7 @@ interface NavigationConfig {
 export const Navigation: NavigationConfig = {
   Pages: {
     'Home': '/',
-    'About': '/About',
+    'About Us': '/About',
     // 'Certifications': {
     //   'Calibration Cert': '/CalibrationCert',
     //   'Laboratory Cert': '/ComingSoon',
@@ -16,12 +16,12 @@ export const Navigation: NavigationConfig = {
   },
   Header: [
     'Home',
-    'About',
+    'About Us',
     // 'Certifications'
   ],
   Footer: [
     'Home',
-    'About',
+    'About Us',
     'Contact Us'
   ]
 };
