@@ -22,6 +22,9 @@
       }
     }
   }
+  img {
+    object-fit: cover;
+  }
 }
 .Overlay {
   z-index: -1;

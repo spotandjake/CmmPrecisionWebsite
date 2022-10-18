@@ -16,8 +16,7 @@ const Hero = ({ children, Fullscreen = false }: Props) => {
         className={styles.Overlay}
         src="/Images/Hero.webp"
         alt="Hero Image"
-        width={1200}
-        height={700}
+        fill
         priority
       />
       {/* <picture className={styles.Overlay}>
