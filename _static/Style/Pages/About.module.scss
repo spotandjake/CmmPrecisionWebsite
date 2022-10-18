@@ -7,7 +7,11 @@
       padding: 0 0.5rem;
     }
   }
-  picture {
+  .pictureBox {
+    width: 100%;
+    position: relative;
+  }
+  picture, .pictureBox {
     border-radius: 0.5rem;
     overflow: hidden;
   }

@@ -1,5 +1,6 @@
 import styles from '../_static/Style/Pages/About.module.scss';
 // Components
+import Image from 'next/future/image';
 import MetaData from '../_static/Components/MetaData';
 import Header from '../_static/Components/Header';
 import Footer from '../_static/Components/Footer';
@@ -77,11 +78,16 @@ const About = () => {
             <div className={styles.flexGrid}>{columns}</div>
           </div>
           <div className={styles.pictureBox}>
-            <picture>
+            <Image
+              src="/Images/cmm.webp"
+              alt="Cmm Image"
+              fill
+            />
+            {/* <picture>
               <source srcSet={'/Images/cmm.webp'} type="image/webp" />
               <source srcSet={'/Images/cmm.jpg'} type="image/jpeg" />
               <img src={'/Images/cmm.jpg'} alt="Cmm Image" />
-            </picture>
+            </picture> */}
           </div>
         </div>
         {/* Our Team */}
