@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'http://cmmprecision.ca/',
+  siteUrl: 'https://cmmprecision.ca/',
   generateRobotsTxt: true, // (optional)
   // ...other options
 };
