@@ -1,5 +1,5 @@
 import styles from '../Style/Components/Hero.module.scss';
-
+import Image from 'next/future/image';
 interface Props {
   children: JSX.Element[] | JSX.Element;
   Fullscreen?: Boolean ;
@@ -12,11 +12,19 @@ const Hero = ({ children, Fullscreen = false }: Props) => {
           {children}
         </div>
       </div>
-      <picture className={styles.Overlay}>
-        <source srcSet={'/Images/Hero.webp'} type="image/webp" />
+      <Image
+        className={styles.Overlay}
+        src="/Images/Hero.webp"
+        alt="Hero Image"
+        width={1200}
+        height={700}
+        priority
+      />
+      {/* <picture className={styles.Overlay}>
+        <source srcSet={'/Images/Hero.webp 1x /Images/Hero_Large.webp 2x'} type="image/webp" />
         <source srcSet={'/Images/Hero.jpg'} type="image/jpeg" />
-        <img src={'/Images/Hero.jpg'} alt="Hero Image" />
-      </picture>
+        <img src={'/Images/Hero.jpg'} alt="Hero Image" width={1200} height={700} />
+      </picture> */}
     </section>
   );
 };

@@ -2,6 +2,7 @@
 import styles from '../_static/Style/Pages/Index.module.scss';
 // Components
 import Link from 'next/link';
+import Image from 'next/future/image';
 import MetaData from '../_static/Components/MetaData';
 import Hero from '../_static/Components/Hero';
 import ImageCard from '../_static/Components/ImageCard';
@@ -26,11 +27,17 @@ const Home = () => {
           <h3>About</h3>
           <div className={styles.gridCol2}>
             <div>
-              <picture>
+              <Image
+                src="/Images/About.webp"
+                alt="Image Of Cmm With Part"
+                width={650}
+                height={375}
+              />
+              {/* <picture>
                 <source srcSet={'/Images/About.webp'} type="image/webp" />
                 <source srcSet={'/Images/About.jpg'} type="image/jpeg" />
                 <img src={'/Images/About.jpg'} alt='Cmm Image' />
-              </picture>
+              </picture> */}
             </div>
             <div className={styles.gridText}>
               <p>
@@ -53,11 +60,17 @@ const Home = () => {
               </p>
             </div>
             <div>
-              <picture>
+              <Image
+                src="/Images/Experience.webp"
+                alt="Image Of Cmm With Part"
+                width={650}
+                height={375}
+              />
+              {/* <picture>
                 <source srcSet={'/Images/Experience.webp'} type="image/webp" />
                 <source srcSet={'/Images/Experience.jpg'} type="image/jpeg" />
                 <img src={'/Images/Experience.jpg'} alt='Cmm Image' />
-              </picture>
+              </picture> */}
             </div>
           </div>
         </div>

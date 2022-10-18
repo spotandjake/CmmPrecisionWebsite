@@ -3,7 +3,9 @@
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
-  picture {
+  picture, .pictureBox {
+    position: relative;
+    z-index: -1;
     height: 100%;
   }
   img {
