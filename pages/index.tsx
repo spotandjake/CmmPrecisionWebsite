@@ -43,7 +43,7 @@ const Home = () => {
               <p>
                 With over 30 years of experience in the measurement field, we have the ability to provide a diverse range of quality services to our clients. Cmm Precision offers a wide array of quality services to many clients in the automotive, aerospace, medical, and many other industries.
               </p>
-              <Link href={Navigation.Pages['About Us']} passHref={true}><button>Read More</button></Link>
+              <Link href={Navigation.Pages['About Us']} passHref={true}><button>More About Us</button></Link>
             </div>
           </div>
         </div>
