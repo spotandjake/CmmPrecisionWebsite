@@ -12,13 +12,14 @@
 .gridCol2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  & > div {
-    padding: 0 1rem;
-    img {
-      border-radius: 0.5rem;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-    }
+}
+.pictureBox {
+  position: relative;
+  padding: 0 1rem;
+  img {
+    border-radius: 0.5rem;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 }
 .GridCards2,

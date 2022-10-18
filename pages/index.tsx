@@ -26,7 +26,7 @@ const Home = () => {
         <div className={styles.Article}>
           <h3>About</h3>
           <div className={styles.gridCol2}>
-            <div>
+            <div className={styles.pictureBox}>
               <Image
                 src="/Images/About.webp"
                 alt="Image Of Cmm With Part"
@@ -59,7 +59,7 @@ const Home = () => {
                 Having done jobs for large multinational corporations and small local business Cmm Precision is perfect for any quality services you may need. 
               </p>
             </div>
-            <div>
+            <div className={styles.pictureBox}>
               <Image
                 src="/Images/Experience.webp"
                 alt="Image Of Cmm With Part"
