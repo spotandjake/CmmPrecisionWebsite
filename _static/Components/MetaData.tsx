@@ -4,10 +4,45 @@ import { useRouter } from 'next/router';
 interface Props {
   PageTitle: string;
 }
+
+const structuredData = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "image": [
+    "https://cmmprecision.ca/images/cmm.jpg",
+    "https://cmmprecision.ca/images/About.jpg",
+    "https://cmmprecision.ca/images/Experience.jpg",
+    "https://cmmprecision.ca/images/romorArm.jpg"
+  ],
+  "name": "Cmm Precision",
+  "description": "Cmm Precision Offers Quality Services That Suite Your Needs.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "910 Rennasance Dr",
+    "addressLocality": "Oshawa",
+    "addressRegion": "Ontario",
+    "postalCode": "L1K 8K4",
+    "addressCountry": "Canada"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.857110,
+    "longitude": -78.860980
+  },
+  "url": "http://www.cmmprecision.ca/",
+  "telephone": "+12893147770"
+});
+
 const MetaData = ({ PageTitle }: Props) => {
   const router = useRouter();
   return (
     <Head>
+      <script 
+        type="application/ld+json" 
+        dangerouslySetInnerHTML={{
+          __html: structuredData,
+        }}
+      />
       <link rel="canonical" href={`https://cmmprecision.ca${router.pathname}`} />
       <title>{`Cmm Precision || ${PageTitle}`}</title>
       <meta name="description" content="Cmm Precision offering quality services that suit your need. We deal in quality and measurement services." />
