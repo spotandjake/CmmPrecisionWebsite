@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
+//ts-ignore
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  //ts-ignore
+  enabled: process.env.ANALYZE === 'true',
+  openAnalyzer: false
+});
 // eslint-disable-next-line no-undef
-module.exports = {
+module.exports = withBundleAnalyzer({
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
@@ -19,4 +25,4 @@ module.exports = {
     locales: ['en'],
     defaultLocale: 'en',
   },
-};
+})

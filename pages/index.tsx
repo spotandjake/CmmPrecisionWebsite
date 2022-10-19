@@ -1,5 +1,8 @@
 // Styles
 import styles from '../_static/Style/Pages/Index.module.scss';
+// Images
+import AboutImage from '../public/images/About.webp';
+import ExperienceImage from '../public/images/Experience.webp';
 // Components
 import Link from 'next/link';
 import Image from 'next/future/image';
@@ -28,7 +31,7 @@ const Home = () => {
           <div className={styles.gridCol2}>
             <div className={styles.pictureBox}>
               <Image
-                src="/Images/About.webp"
+                src={AboutImage}
                 alt="Image Of Cmm With Part"
                 width={650}
                 height={375}
@@ -61,7 +64,7 @@ const Home = () => {
             </div>
             <div className={styles.pictureBox}>
               <Image
-                src="/Images/Experience.webp"
+                src={ExperienceImage}
                 alt="Image Of Cmm With Part"
                 width={650}
                 height={375}

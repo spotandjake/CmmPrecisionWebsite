@@ -1,5 +1,6 @@
 import styles from '../Style/Components/Hero.module.scss';
 import Image from 'next/future/image';
+import HeroImage from '../../public/images/Hero.webp';
 interface Props {
   children: JSX.Element[] | JSX.Element;
   Fullscreen?: Boolean ;
@@ -14,7 +15,7 @@ const Hero = ({ children, Fullscreen = false }: Props) => {
       </div>
       <Image
         className={styles.Overlay}
-        src="/Images/Hero.webp"
+        src={HeroImage}
         alt="Hero Image"
         fill
         priority

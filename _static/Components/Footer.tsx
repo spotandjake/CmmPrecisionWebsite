@@ -1,8 +1,8 @@
 import styles from '../Style/Components/Footer.module.scss';
 import Link from 'next/link';
-import { FooterLinks } from '../Navigation';
 import SvgIcon from '@mui/material/SvgIcon';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { FooterLinks } from '../Navigation';
 
 const Footer = () => {
   return (

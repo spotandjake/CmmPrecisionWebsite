@@ -1,4 +1,6 @@
 import styles from '../_static/Style/Pages/About.module.scss';
+// Images
+import CmmImage from '../public/images/cmm.webp';
 // Components
 import Image from 'next/future/image';
 import MetaData from '../_static/Components/MetaData';
@@ -79,7 +81,7 @@ const About = () => {
           </div>
           <div className={styles.pictureBox}>
             <Image
-              src="/Images/cmm.webp"
+              src={CmmImage}
               alt="Cmm Image"
               fill
             />
