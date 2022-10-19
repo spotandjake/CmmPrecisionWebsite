@@ -45,7 +45,7 @@ const About = () => {
       <div className={styles.columns}>
         <ul>
           {chunk.map((v) => (
-            <li>{v}</li>
+            <li key={i}>{v}</li>
           ))}
         </ul>
       </div>

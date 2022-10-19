@@ -1,3 +1,8 @@
+# No Allow
+User-agent: Googlebot
+Disallow: /cdn-cgi/
+Disallow: /cpanel
+
 # *
 User-agent: *
 Allow: /
