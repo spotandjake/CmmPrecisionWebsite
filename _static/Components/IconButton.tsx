@@ -1,5 +1,5 @@
 import styles from '../Style/Components/IconButton.module.scss';
-import Image from 'next/future/image';
+import Image from 'next/image';
 
 interface Props {
   buttonIcon: string; // TODO: Determine a type for this

@@ -2,7 +2,7 @@ import styles from '../_static/Style/Pages/About.module.scss';
 // Images
 import CmmImage from '../public/Images/cmm.webp';
 // Components
-import Image from 'next/future/image';
+import Image from 'next/image';
 import MetaData from '../_static/Components/MetaData';
 import Header from '../_static/Components/Header';
 import Footer from '../_static/Components/Footer';

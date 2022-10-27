@@ -5,7 +5,7 @@ import AboutImage from '../public/Images/About.webp';
 import ExperienceImage from '../public/Images/Experience.webp';
 // Components
 import Link from 'next/link';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import MetaData from '../_static/Components/MetaData';
 import Hero from '../_static/Components/Hero';
 import ImageCard from '../_static/Components/ImageCard';

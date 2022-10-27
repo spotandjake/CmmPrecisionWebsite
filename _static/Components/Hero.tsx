@@ -1,5 +1,5 @@
 import styles from '../Style/Components/Hero.module.scss';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import HeroImage from '../../public/Images/Hero.webp';
 interface Props {
   children: JSX.Element[] | JSX.Element;

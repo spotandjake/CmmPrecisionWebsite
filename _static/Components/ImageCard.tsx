@@ -1,5 +1,5 @@
 import styles from '../Style/Components/ImageCard.module.scss';
-import Image from 'next/future/image';
+import Image from 'next/image';
 
 interface Props {
   ImagePath: string;
