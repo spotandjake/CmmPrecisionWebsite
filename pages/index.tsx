@@ -1,8 +1,8 @@
 // Styles
 import styles from '../_static/Style/Pages/Index.module.scss';
 // Images
-import AboutImage from '../public/images/About.webp';
-import ExperienceImage from '../public/images/Experience.webp';
+import AboutImage from '../public/Images/About.webp';
+import ExperienceImage from '../public/Images/Experience.webp';
 // Components
 import Link from 'next/link';
 import Image from 'next/future/image';
