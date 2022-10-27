@@ -1,6 +1,6 @@
 import styles from '../_static/Style/Pages/About.module.scss';
 // Images
-import CmmImage from '../public/images/cmm.webp';
+import CmmImage from '../public/Images/cmm.webp';
 // Components
 import Image from 'next/future/image';
 import MetaData from '../_static/Components/MetaData';
