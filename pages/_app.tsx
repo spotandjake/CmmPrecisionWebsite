@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GoogleAnalytics trackPageViews />
       <script
         id="msClarity"
+        defer
         dangerouslySetInnerHTML={{
           __html: `
           (function(c,l,a,r,i,t,y){
