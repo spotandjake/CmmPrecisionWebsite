@@ -45,7 +45,7 @@ const MetaData = ({ PageTitle }: Props) => {
       />
       <link rel="canonical" href={`https://cmmprecision.ca${router.pathname}`} />
       <title>{`Cmm Precision || ${PageTitle}`}</title>
-      <meta name="description" content="Cmm Precision offering quality services that suit your need. We deal in quality and measurement services." />
+      <meta name="description" content="At Cmm Precision we offer a selection of high quality services relating to quality control, testing and rework. Cmm Precision will fulfil your quality needs." />
       <meta name="keywords" content="Cmm, Precision, Oshawa, Toronto, GTA, Ontario, Metrology, Measurement, Reverse Engineering, Mechanical, Measure" />
       <meta name="author" content="Dave Follest" />
       <link rel="icon" href={'/favicon.svg'} />
