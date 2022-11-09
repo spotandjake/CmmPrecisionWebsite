@@ -29,19 +29,38 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
       />
       {/* Microsoft Clarity */}
-      <script
+      {/* <script
         id="msClarity"
         defer
         dangerouslySetInnerHTML={{
           __html: `
           (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            c[a]=c[a]||function(){
+              (c[a].q=c[a].q||[]).push(arguments)
+            };
+            t=l.createElement(r);
+            t.async=1;
+            t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+            y=l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t,y);
           })(window, document, "clarity", "script", "e4pkw0pjg0");
         `,
         }}
+      /> */}
+      <script
+        id="msClarity"
+        dangerouslySetInnerHTML={{
+          __html: `
+          (function(c,l,a){
+            c[a]=c[a]||function(){
+              (c[a].q=c[a].q||[]).push(arguments)
+            };
+          })(window, document, "clarity");
+        `,
+        }}
       />
+      <script id="msClarity"></script>
+      <script async src="./Clarity/tag.js?ref=bwt"></script>
       <Component {...pageProps} />
     </>
   );
