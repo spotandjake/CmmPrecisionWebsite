@@ -7,7 +7,7 @@ import MetaData from '../_static/Components/MetaData';
 import Header from '../_static/Components/Header';
 import Footer from '../_static/Components/Footer';
 import Hero from '../_static/Components/Hero';
-// import ImageCard from '../_static/Components/ImageCard';
+import ImageCard from '../_static/Components/ImageCard';
 // About Content
 // const alphabetSort = (arr: string[]) => arr.sort();
 const lengthSort = (arr: string[]) => arr.sort((a, b) => b.length - a.length);
@@ -72,33 +72,44 @@ const About = () => {
             <p>
               &ensp;With over 30 years of experience in the measurement field,
               we have the ability to provide a diverse range of quality services
-              to our clients. Cmm Precision offers a wide array of quality
-              services to many clients in the automotive, aerospace, medical,
-              and many other industries.
+              to our clients such as measurement, rework, consulting and an
+              assortment of other services. Cmm Precision offers a wide array of
+              quality services to many clients in the automotive, aerospace,
+              medical, and many other industries.
             </p>
             <h3>FOLLEST CMM &amp; PRECISION TOOLING OFFERS</h3>
             <div className={styles.flexGrid}>{columns}</div>
           </div>
           <div className={styles.pictureBox}>
-            <Image
-              src={CmmImage}
-              alt="Cmm Image"
-              fill
-            />
-            {/* <picture>
-              <source srcSet={'/Images/cmm.webp'} type="image/webp" />
-              <source srcSet={'/Images/cmm.jpg'} type="image/jpeg" />
-              <img src={'/Images/cmm.jpg'} alt="Cmm Image" />
-            </picture> */}
+            <Image src={CmmImage} alt="Cmm Image" fill />
           </div>
         </div>
         {/* Our Team */}
         {/* <div>
           <h3>Our Team</h3>
           <div className={styles.flexGrid}>
-            <ImageCard ImagePath={'/Images/Hero.jpg'} OverlayText={'Dave Follest'} />
+            <ImageCard
+              ImagePath={'/Images/Hero.jpg'}
+              OverlayText={'Dave Follest'}
+            />
           </div>
         </div> */}
+        {/* Equipment */}
+        <div>
+          <h3 className="center">Equipment</h3>
+          <div className="spacedGrid">
+            <ImageCard
+              ImagePath={'/Images/cmm.jpg'}
+              OverlayText={'Brown & Sharp One CMM'}
+              Url={'https://en.wikipedia.org/wiki/Coordinate-measuring_machine'}
+            />
+            <ImageCard
+              ImagePath={'/Images/romorArm.jpg'}
+              OverlayText={'Infinity 2.0 Romor Arm'}
+              Url={'https://en.wikipedia.org/wiki/Romer_arm'}
+            />
+          </div>
+        </div>
       </section>
       {/* Footer */}
       <Footer />

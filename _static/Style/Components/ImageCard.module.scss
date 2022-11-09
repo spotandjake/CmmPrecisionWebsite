@@ -1,9 +1,13 @@
 .Card {
+  a:hover {
+    opacity: 1;
+  }
   aspect-ratio: 5 / 3;
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
-  picture, .pictureBox {
+  picture,
+  .pictureBox {
     position: relative;
     z-index: -1;
     height: 100%;

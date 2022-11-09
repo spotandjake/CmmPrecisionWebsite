@@ -36,7 +36,6 @@ const Home = () => {
                 width={750}
                 height={375}
                 sizes="(max-height: 375px) 100vh, (max-height: 375px) 0vh"
-                layout="responsive"
               />
             </div>
             <div className={styles.gridText}>
@@ -124,14 +123,16 @@ const Home = () => {
         {/* Equipment */}
         <div className={styles.Article}>
           <h3>Equipment</h3>
-          <div className={styles.GridCards2}>
+          <div className="spacedGrid">
             <ImageCard
               ImagePath={'/Images/cmm.jpg'}
               OverlayText={'Brown & Sharp One CMM'}
+              Url={'https://en.wikipedia.org/wiki/Coordinate-measuring_machine'}
             />
             <ImageCard
               ImagePath={'/Images/romorArm.jpg'}
               OverlayText={'Infinity 2.0 Romor Arm'}
+              Url={'https://en.wikipedia.org/wiki/Romer_arm'}
             />
           </div>
         </div>

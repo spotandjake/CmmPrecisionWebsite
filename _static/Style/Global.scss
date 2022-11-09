@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 /* General Page Stuff */
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -20,7 +21,8 @@ body {
   width: 100%;
   overflow-y: auto;
 }
-picture, img {
+picture,
+img {
   display: block;
   width: 100%;
   user-select: none;
@@ -30,8 +32,8 @@ button {
   display: block;
   height: max-content;
   margin: auto 0;
-  padding: .75rem 1.5rem;
-  border-radius: .5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
   outline: none;
   border: none;
   background-color: var(--color-Background-2);
@@ -39,7 +41,7 @@ button {
   cursor: pointer;
   font-weight: bold;
   &:hover {
-    opacity: .75;
+    opacity: 0.75;
   }
 }
 a {
@@ -47,11 +49,27 @@ a {
   text-decoration: none;
   font-weight: bold;
   &:hover {
-    opacity: .75;
+    opacity: 0.75;
   }
 }
+// Grid System
+.spacedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 1rem;
+}
 // Text
-h1, h2, h3, h4, h5, h6 {
+.center {
+  text-align: center;
+  margin: auto 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Open Sans', Roboto, Arial, sans-serif;
   color: var(--color-Text-2);
 }

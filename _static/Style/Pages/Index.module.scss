@@ -22,14 +22,10 @@
     object-fit: cover;
   }
 }
-.GridCards2,
 .GridCards3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, max-content);
   grid-gap: 2rem;
-}
-.GridCards2 {
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
 }
 .GridCards3 {
   grid-template-columns: repeat(3, minmax(300px, 1fr));
@@ -48,7 +44,6 @@
       }
     }
   }
-  .GridCards2,
   .GridCards3 {
     grid-template-columns: 1fr;
   }
