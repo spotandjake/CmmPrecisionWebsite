@@ -21,6 +21,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
             galite('create', 'UA-127375505-1', 'auto');
             galite('send', 'pageview');
+            const terminationEvent = 'onpagehide' in window ? 'pagehide' : 'unload';
+            window.addEventListener(terminationEvent, function() {
+              galite('send', 'timing', 'JS Dependencies', 'unload')
+            });
         `,
         }}
       />

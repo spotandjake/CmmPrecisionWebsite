@@ -58,7 +58,7 @@ const About = () => {
     <section className={styles.container}>
       <MetaData PageTitle="About Us" />
       {/* Header */}
-      <Header Active="About" />
+      <Header Active="About Us" />
       {/* Hero */}
       <Hero>
         <h2>About Us</h2>
