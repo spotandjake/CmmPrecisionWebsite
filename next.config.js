@@ -25,4 +25,4 @@ module.exports = withBundleAnalyzer({
     locales: ['en'],
     defaultLocale: 'en',
   },
-})
+});

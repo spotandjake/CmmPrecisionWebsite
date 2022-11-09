@@ -36,15 +36,10 @@ const Home = () => {
                 width={650}
                 height={375}
               />
-              {/* <picture>
-                <source srcSet={'/Images/About.webp'} type="image/webp" />
-                <source srcSet={'/Images/About.jpg'} type="image/jpeg" />
-                <img src={'/Images/About.jpg'} alt='Cmm Image' />
-              </picture> */}
             </div>
             <div className={styles.gridText}>
               <p>
-                With over 30 years of experience in the measurement field, we have the ability to provide a diverse range of quality services to our clients. Cmm Precision offers a wide array of quality services to many clients in the automotive, aerospace, medical, and many other industries.
+                With over 30 years of experience in the measurement field, we have the ability to provide a diverse range of quality services to our clients such as measurement, rework, consulting and an assortment of other services. Cmm Precision offers a wide array of quality services to many clients in the automotive, aerospace, medical, and many other industries.
               </p>
               <Link href={Navigation.Pages['About Us']} passHref={true}><button>More About Us</button></Link>
             </div>
@@ -56,10 +51,10 @@ const Home = () => {
           <div className={styles.gridCol2}>
             <div>
               <p className={styles.gridText}>
-                Cmm Precision has been serving clients for over 30 years with quality measurements and services. Allowing you to focus on your business while we focus on the quality of your products.
+                Cmm Precision has been serving clients for over 30 years with high quality precision measurements and services. Cmm Precision allows you to focus on your business while we focus on the quality of your products.
               </p>
               <p>
-                Having done jobs for large multinational corporations and small local business Cmm Precision is perfect for any quality services you may need. 
+                Having served jobs for multiple large multinational corporations and small local businesses Cmm Precision is perfect for any quality services you may need.
               </p>
             </div>
             <div className={styles.pictureBox}>
@@ -69,11 +64,6 @@ const Home = () => {
                 width={650}
                 height={375}
               />
-              {/* <picture>
-                <source srcSet={'/Images/Experience.webp'} type="image/webp" />
-                <source srcSet={'/Images/Experience.jpg'} type="image/jpeg" />
-                <img src={'/Images/Experience.jpg'} alt='Cmm Image' />
-              </picture> */}
             </div>
           </div>
         </div>

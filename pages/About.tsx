@@ -44,10 +44,10 @@ const About = () => {
     const chunk = lengthSort(sortedContent.slice(i, i + aboutContenRowCount));
     // Build it
     columns.push(
-      <div className={styles.columns}>
+      <div className={styles.columns} key={i}>
         <ul>
-          {chunk.map((v) => (
-            <li key={i}>{v}</li>
+          {chunk.map((v, j) => (
+            <li key={j}>{v}</li>
           ))}
         </ul>
       </div>
