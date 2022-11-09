@@ -9,7 +9,7 @@ import Footer from '../_static/Components/Footer';
 import Hero from '../_static/Components/Hero';
 // import ImageCard from '../_static/Components/ImageCard';
 // About Content
-const alphabetSort = (arr: string[]) => arr.sort();
+// const alphabetSort = (arr: string[]) => arr.sort();
 const lengthSort = (arr: string[]) => arr.sort((a, b) => b.length - a.length);
 const alphabetlengthSort = (arr: string[]) =>
   arr.sort((a, b) => a.localeCompare(b) * 10 + b.length - a.length);
