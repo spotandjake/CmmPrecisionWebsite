@@ -18,7 +18,7 @@
   padding: 0 1rem;
   img {
     border-radius: 0.5rem;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 2 / 1;
     object-fit: cover;
   }
 }
@@ -42,7 +42,8 @@
     div {
       display: flex;
       flex-direction: column;
-      picture, img {
+      picture,
+      img {
         margin: auto;
       }
     }
