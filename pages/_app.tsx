@@ -2,23 +2,28 @@
 import '../_static/Style/Theme/Dark.scss';
 import '../_static/Style/Global.scss';
 // Imports
-import { GoogleAnalytics, event } from 'nextjs-google-analytics';
+import Script from 'next/script';
 // Types
-import type { AppProps, NextWebVitalsMetric } from 'next/app';
-
-export function reportWebVitals({ id, name, label, value }: NextWebVitalsMetric) {
-  event(name, {
-    category: label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
-    value: Math.round(name === 'CLS' ? value * 1000 : value), // values must be integers
-    label: id, // id unique to current page load
-    nonInteraction: true, // avoids affecting bounce rate.
-  });
-}
+import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <GoogleAnalytics trackPageViews />
+      {/* Google Analytics */}
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=UA-127375505-1"></Script>
+      <script
+        defer
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-127375505-1');
+        `,
+        }}
+      />
+      {/* Microsoft Clarity */}
       <script
         id="msClarity"
         defer
