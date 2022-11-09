@@ -50,6 +50,7 @@ const MetaData = ({ PageTitle }: Props) => {
       <meta name="author" content="Dave Follest" />
       <link rel="icon" href={'/favicon.svg'} />
       {/* Open Graph */}
+      <meta name="twitter:card" content="summary" />
       <meta property="og:title" content={`Cmm Precision || ${PageTitle}`} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://cmmprecision.ca/" />
