@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.footer}>
         <div className={styles.moto}>
-          <h3><Link href={'/'}>Cmm Precision</Link></h3>
+          <h3><Link href={'/'} prefetch={false}>Cmm Precision</Link></h3>
           <p>Cmm Inspection That Meets Your Needs.</p>
         </div>
         <div>
@@ -18,7 +18,7 @@ const Footer = () => {
             {FooterLinks.map(({ Name, Address }) => {
               return (
                 <li key={Name}>
-                  <span className={styles.arrow}></span><Link href={Address}>{Name}</Link>
+                  <span className={styles.arrow}></span><Link href={Address} prefetch={false}>{Name}</Link>
                 </li>
               );
             })}
@@ -32,7 +32,7 @@ const Footer = () => {
                 component={LinkedInIcon}
                 viewBox="0 0 24 24"
               />
-              <Link href="https://ca.linkedin.com/in/david-follest-83458841">LinkedIn</Link></li>
+              <Link href="https://ca.linkedin.com/in/david-follest-83458841" prefetch={false}>LinkedIn</Link></li>
           </ul>
         </div>
       </div>

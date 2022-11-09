@@ -13,7 +13,7 @@ const Header = ({ Active }: Props) => {
   const [ menuOpen, setMenuOpen ] = useState(false);
   return (
     <header className={menuOpen ? '' : styles.container}>
-      <h1><Link href={'/'}>Cmm Precision</Link></h1>
+      <h1><Link href={'/'} prefetch={false}>Cmm Precision</Link></h1>
       <nav className={styles.navContainer}>
         <IconButton 
           aria-label="Menu Toggle" 
@@ -32,7 +32,7 @@ const Header = ({ Active }: Props) => {
             if (typeof Address == 'string') {
               return (
                 <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={index}>
-                  <Link href={Address}>{Name}</Link>
+                  <Link href={Address} prefetch={false}>{Name}</Link>
                 </li>
               );
             } else {
@@ -43,7 +43,7 @@ const Header = ({ Active }: Props) => {
                     {Object.entries(Address).map(([ Name, Address ], index) => {
                       return (
                         <li className={Active == Name ? styles.Active : ''} onClick={() => setMenuOpen(false)} key={index}>
-                          <Link href={Address}>{Name}</Link>
+                          <Link href={Address} prefetch={false}>{Name}</Link>
                         </li>
                       );
                     })}
@@ -53,7 +53,7 @@ const Header = ({ Active }: Props) => {
             }
           })}
           <li onClick={() => setMenuOpen(false)}>
-            <Link href="/Contact" passHref={true}><button>Contact Us</button></Link>
+            <Link href="/Contact" prefetch={false} passHref={true}><button>Contact Us</button></Link>
           </li>
         </ul>
       </nav>
