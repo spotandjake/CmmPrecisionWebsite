@@ -49,7 +49,7 @@ const MetaData = ({ PageTitle }: Props) => {
       />
       <title>
         {PageTitle == 'Home'
-          ? 'Cmm Precision'
+          ? 'Cmm Precision quality solutions that suit your businesses needs'
           : `Cmm Precision || ${PageTitle}`}
       </title>
       <meta
