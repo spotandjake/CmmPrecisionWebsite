@@ -8,45 +8,58 @@ interface Props {
 const structuredData = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'GeneralContractor',
-  'image': [
+  image: [
     'https://cmmprecision.ca/images/cmm.jpg',
     'https://cmmprecision.ca/images/About.jpg',
     'https://cmmprecision.ca/images/Experience.jpg',
-    'https://cmmprecision.ca/images/romorArm.jpg'
+    'https://cmmprecision.ca/images/romorArm.jpg',
   ],
-  'name': 'Cmm Precision',
-  'description': 'Cmm Precision Offers Quality Services That Suite Your Needs.',
-  'address': {
+  name: 'Cmm Precision',
+  description: 'Cmm Precision Offers Quality Services That Suite Your Needs.',
+  address: {
     '@type': 'PostalAddress',
-    'streetAddress': '910 Rennasance Dr',
-    'addressLocality': 'Oshawa',
-    'addressRegion': 'Ontario',
-    'postalCode': 'L1K 8K4',
-    'addressCountry': 'Canada'
+    streetAddress: '910 Rennasance Dr',
+    addressLocality: 'Oshawa',
+    addressRegion: 'Ontario',
+    postalCode: 'L1K 8K4',
+    addressCountry: 'Canada',
   },
-  'geo': {
+  geo: {
     '@type': 'GeoCoordinates',
-    'latitude': 43.857110,
-    'longitude': -78.860980
+    latitude: 43.85711,
+    longitude: -78.86098,
   },
-  'url': 'http://www.cmmprecision.ca/',
-  'telephone': '+12893147770'
+  url: 'http://www.cmmprecision.ca/',
+  telephone: '+12893147770',
 });
 
 const MetaData = ({ PageTitle }: Props) => {
   const router = useRouter();
   return (
     <Head>
-      <script 
-        type="application/ld+json" 
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: structuredData,
         }}
       />
-      <link rel="canonical" href={`https://cmmprecision.ca${router.pathname}`} />
-      <title>{`Cmm Precision || ${PageTitle}`}</title>
-      <meta name="description" content="At Cmm Precision we offer a selection of high quality services relating to quality control, testing and rework. Cmm Precision will fulfil your quality needs." />
-      <meta name="keywords" content="Cmm, Precision, Oshawa, Toronto, GTA, Ontario, Metrology, Measurement, Reverse Engineering, Mechanical, Measure" />
+      <link
+        rel="canonical"
+        href={`https://cmmprecision.ca${router.pathname}`}
+      />
+      <title>
+        {PageTitle == 'Home'
+          ? 'Cmm Precision'
+          : `Cmm Precision || ${PageTitle}`}
+      </title>
+      <meta
+        name="description"
+        content="At Cmm Precision we offer a selection of high quality services relating to quality control, testing and rework. Cmm Precision will fulfil your quality needs."
+      />
+      <meta
+        name="keywords"
+        content="Cmm, Precision, Oshawa, Toronto, GTA, Ontario, Metrology, Measurement, Reverse Engineering, Mechanical, Measure"
+      />
       <meta name="author" content="Dave Follest" />
       <link rel="icon" href={'/favicon.svg'} />
       {/* Open Graph */}
@@ -54,7 +67,10 @@ const MetaData = ({ PageTitle }: Props) => {
       <meta property="og:title" content={`Cmm Precision || ${PageTitle}`} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://cmmprecision.ca/" />
-      <meta property="og:image" content="https://cmmprecision.ca/Images/Hero.jpg" />
+      <meta
+        property="og:image"
+        content="https://cmmprecision.ca/Images/Hero.jpg"
+      />
     </Head>
   );
 };
