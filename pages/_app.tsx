@@ -2,7 +2,24 @@
 import '../_static/Style/Theme/Dark.scss';
 import '../_static/Style/Global.scss';
 // Types
-import type { AppProps } from 'next/app';
+import type { AppProps, NextWebVitalsMetric } from 'next/app';
+
+export function reportWebVitals({
+  id,
+  name,
+  label,
+  value,
+}: NextWebVitalsMetric) {
+  // @ts-ignore
+  window.galite('send', 'event', {
+    eventCategory:
+      label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
+    eventAction: name,
+    eventValue: Math.round(name === 'CLS' ? value * 1000 : value), // values must be integers
+    eventLabel: id, // id unique to current page load
+    nonInteraction: true, // avoids affecting bounce rate.
+  });
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
