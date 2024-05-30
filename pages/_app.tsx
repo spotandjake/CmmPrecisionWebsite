@@ -1,6 +1,8 @@
 // Styles
 import '../_static/Style/Theme/Dark.scss';
 import '../_static/Style/Global.scss';
+// Vitals
+import { SpeedInsights } from '@vercel/speed-insights/next';
 // Types
 import type { AppProps, NextWebVitalsMetric } from 'next/app';
 
@@ -24,6 +26,8 @@ export function reportWebVitals({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      {/* Next Speed Vitals */}
+      <SpeedInsights/>
       {/* Google Analytics */}
       <script
         defer
