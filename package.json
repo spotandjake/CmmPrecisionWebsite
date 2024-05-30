@@ -15,14 +15,14 @@
     "@mui/material": "^5.10.11",
     "@next/bundle-analyzer": "^13.0.0",
     "critters": "^0.0.16",
-    "next": "^13.0.0",
+    "next": "^14.2.3",
     "nodemailer": "^6.8.0",
-    "preact": "^10.11.2",
+    "preact": "^10.22.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.7.14",
+    "@types/node": "^20.12.13",
     "@types/nodemailer": "^6.4.6",
     "@types/react": "^18.0.21",
     "@typescript-eslint/eslint-plugin": "^5.36.1",

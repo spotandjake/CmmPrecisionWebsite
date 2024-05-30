@@ -17,7 +17,6 @@ module.exports = withBundleAnalyzer({
   },
   experimental: {
     workerThreads: true,
-    newNextLinkBehavior: true,
     optimizeCss: true,
     // runtime: 'experimental-edge',
   },
