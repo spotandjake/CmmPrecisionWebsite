@@ -3,6 +3,7 @@ import '../_static/Style/Theme/Dark.scss';
 import '../_static/Style/Global.scss';
 // Vitals
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/react"
 // Types
 import type { AppProps, NextWebVitalsMetric } from 'next/app';
 
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       {/* Next Speed Vitals */}
       <SpeedInsights/>
+      <Analytics />
       {/* Google Analytics */}
       <script
         defer
